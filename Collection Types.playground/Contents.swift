@@ -16,4 +16,8 @@ for i in arrayInt {
     print(i)
 }
 
+for (index, value) in arrayInt.enumerated() {
+    print("\(index): \(value)")
+}
+
 
