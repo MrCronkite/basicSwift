@@ -1,19 +1,28 @@
+let someNumber = "123"
+
+let convertNumber_1 = Int(someNumber)
 
 
+//coalescing operator
+print(convertNumber_1 ?? "error")
 
-let somNumber: String? = "111"
-let convertNumber = Int(somNumber!)
-
-print(convertNumber ?? "ошибка")
-
-
-if let convertNumber = Int(somNumber!){
+if let convertNumber = Int(someNumber){
     print(convertNumber)
-} else {
-    print("ошибка")
 }
 
-var number = somNumber?.count
-print(number as Any)
+func numberUnwrapping(){
+    guard let convertNumber_3 = Int(someNumber) else { print("error guard"); return}
+    
+    print(convertNumber_3)
+}
+
+numberUnwrapping()
+
+if case let convertNumber_4? = Int(someNumber){
+    print(convertNumber_4)
+}
+
+
+
 
 
