@@ -54,14 +54,19 @@ default :
 //tuples
 let point = (3, 2)
 switch point {
-case (let x, 2) :
+case (let x, 2) where x > 5:
     print(x)
-case (3, let y):
+case (3, let y) :
     print(y)
-case let (x, y):
+case let (x, y) :
     print(x, y)
 }
 
+//continue
+//break
+//fallthrough
+//return
+//throw
 
 
 
