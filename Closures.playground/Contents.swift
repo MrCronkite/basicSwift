@@ -48,4 +48,10 @@ var mathcFunc: (Int, Int) -> Int = addNumber
 print(mathcFunc(2, 5))
 
 
-//как параметр 
+//как параметр
+
+func printNumber(_ matchFunction: (Int, Int) -> Int, _ a: Int, _ b: Int){
+    print(matchFunction(a, b))
+}
+
+printNumber(addNumber, 10, 12)
