@@ -11,6 +11,10 @@ let reversName_1 = names.sorted(by: {(s1, s2) -> Bool in s1 > s2 })
 
 let reversName_2 = names.sorted { s2, s1 in s1 > s2 }
 
+let reversName_3 = names.sorted(by: { $0 > $1 })
+
+print(reversName_3)
+
 print(reversName_2)
 
 print(reversName_1)
