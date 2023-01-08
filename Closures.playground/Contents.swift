@@ -17,3 +17,14 @@ func getNameParam_(name item: String) -> String{
 }
 
 print(getNameParam_(name: "vlad"))
+
+func swapNumber(_ a: inout Int, _ b: inout Int){
+    let tempNUmber = a
+    a = b
+    b = tempNUmber
+}
+
+var someNumber = 32
+var anotherNumber = 78
+swapNumber(&someNumber, &anotherNumber)
+print(someNumber, anotherNumber)
