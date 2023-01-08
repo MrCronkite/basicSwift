@@ -1,10 +1,19 @@
 
 
-func funcName(i name: String) -> String{
-    return " hello \(name)"
+func getName(){
+    print("Vlad")
 }
 
+getName()
 
-print(funcName(i: "Vlad"))
-print(funcName(i: "Dima"))
+func getNameParam(name item: String){
+    print(item)
+}
 
+getNameParam(name: "Vlad")
+
+func getNameParam_(name item: String) -> String{
+    return "hello \(item)"
+}
+
+print(getNameParam_(name: "vlad"))
