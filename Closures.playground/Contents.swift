@@ -13,6 +13,10 @@ let reversName_2 = names.sorted { s2, s1 in s1 > s2 }
 
 let reversName_3 = names.sorted(by: { $0 > $1 })
 
+let reversName_4 = names.sorted(by: > )
+
+print(reversName_4)
+
 print(reversName_3)
 
 print(reversName_2)
