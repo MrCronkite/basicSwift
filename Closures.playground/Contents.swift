@@ -24,3 +24,13 @@ print(reversName_2)
 print(reversName_1)
 
 print(reversName)
+
+let number = [45, 23, 23, 34]
+
+let string = number.map { number -> Int in
+    var number = number
+    number += 10
+    return number
+}
+
+print(string)
