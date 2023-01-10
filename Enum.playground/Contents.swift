@@ -1,6 +1,6 @@
 
 
-enum Compas {
+enum Compas: CaseIterable {
     case north
     case south
     case east
@@ -21,3 +21,15 @@ case .south:
 case .west:
     print("west")
 }
+
+print(Compas.allCases.count)
+
+enum Planet: Int, CaseIterable {
+    case mercury = 1, venus, earth, mars, jupiter, saturn, uranus, neptune
+}
+
+for planet in Planet.allCases {
+    print(planet.rawValue)
+}
+
+
