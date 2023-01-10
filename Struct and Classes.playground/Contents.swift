@@ -1,12 +1,32 @@
   
 
 struct SomeStruct {
-    let number: Int
+    var number: Int = 10
 }
 
 class SomeClass {
-    let number: Int = 10
+    var number: Int = 10
 }
+
+var objStruct = SomeStruct()
+
+var objClass = SomeClass()
+
+var obj_2 = objClass
+
+var obj_1 = objStruct
+
+objClass.number = 30
+objStruct.number = 30
+
+
+
+print(objStruct.number)
+print(obj_1.number)
+print(objClass.number)
+print(obj_2.number)
+
+
 
 
 
