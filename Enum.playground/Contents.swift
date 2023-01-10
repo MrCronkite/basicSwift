@@ -9,4 +9,15 @@ enum Compas {
 
 var derectToHead = Compas.west
 
-print(derectToHead)
+derectToHead = .north
+
+switch derectToHead {
+case .east:
+    print("east")
+case .north:
+    print("north")
+case .south:
+    print("south")
+case .west:
+    print("west")
+}
