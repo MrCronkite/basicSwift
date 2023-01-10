@@ -32,4 +32,11 @@ for planet in Planet.allCases {
     print(planet.rawValue)
 }
 
+indirect enum Arithmetic{
+    case number(Int)
+    case anotherCase(Arithmetic, Arithmetic)
+}
 
+var number_1 = Arithmetic.number(12)
+var number_2 = Arithmetic.number(6)
+var multi = Arithmetic.anotherCase(number_1, number_2)
