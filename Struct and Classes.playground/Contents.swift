@@ -5,10 +5,8 @@ struct SomeStruct {
 }
 
 class SomeClass {
-    let number: Int
-    
-    init(number) {
-        self.number = number
-    }
+    let number: Int = 10
 }
+
+
 
