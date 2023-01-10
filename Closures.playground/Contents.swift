@@ -1,5 +1,5 @@
 
-let names = ["Kolia", "Roma", "Ignat", "Ruslan"]
+var names = ["Kolia", "Roma", "Ignat", "Ruslan"]
 
 func backward(_ s1: String, _ s2: String) -> Bool{
     return s1 > s2
@@ -34,3 +34,28 @@ let string = number.map { number -> Int in
 }
 
 print(string)
+
+func serve(cast closure: () -> String){
+    print(closure())
+}
+
+serve(cast: { names.remove(at: 0)})
+
+func server(costumer closure: @autoclosure () -> String ){
+    print(closure())
+}
+
+server(costumer: names.remove(at: 2))
+
+var complitionHandlers: [() -> Void] = []
+
+func escap(closure: @escaping () -> Void){
+    complitionHandlers.append(closure)
+    print(complitionHandlers)
+}
+
+func complit() -> Void {
+    print("hello")
+}
+
+
