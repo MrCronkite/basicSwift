@@ -27,6 +27,19 @@ print(objClass.number)
 print(obj_2.number)
 
 
+class Person {
+    var name: String
+    var age: Int
+    
+    init(name: String, age: Int){
+        self.name = name
+        self.age = age
+    }
+}
+
+let person = Person(name: "vlad", age: 12)
+
+
 
 
 
