@@ -40,6 +40,17 @@ class Person {
 let person = Person(name: "vlad", age: 12)
 
 
+class Counter {
+  static var count = 0
+    
+    func inrement(){
+        Counter.count += 1
+    }
+}
 
 
+var exCounter = Counter()
 
+exCounter.inrement()
+
+print(Counter.count)
