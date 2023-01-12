@@ -22,3 +22,24 @@ let exLine = Line(x: PointX(x: 12), y: PointY(y: 4))
 
 print(exLine.originY.y)
 
+
+class Vehicle {
+    var numberOfWheels = 0
+    var description: String {
+        return "numberOfWheels \(numberOfWheels)"
+    }
+}
+
+class Bicicle: Vehicle {
+    override init() {
+        super.init()
+        numberOfWheels = 2
+        
+    }
+}
+
+var vehicle = Vehicle()
+var bicicle = Bicicle()
+
+print(vehicle.description)
+print(bicicle.description)
