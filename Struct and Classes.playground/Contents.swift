@@ -53,7 +53,7 @@ var exCounter = Counter()
 
 exCounter.inrement()
 
-print(Counter.count)
+
 
 struct CounterTwo {
     var count = 0
@@ -65,3 +65,15 @@ struct CounterTwo {
 var exCounterTwo = CounterTwo()
 exCounterTwo.increment()
 print(exCounterTwo.count)
+
+class NasCouner: Counter{
+    override func inrement(){
+        Counter.count += 4
+    }
+}
+
+var newCounter = NasCouner()
+
+newCounter.inrement()
+
+print(Counter.count)
