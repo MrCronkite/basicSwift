@@ -54,3 +54,14 @@ var exCounter = Counter()
 exCounter.inrement()
 
 print(Counter.count)
+
+struct CounterTwo {
+    var count = 0
+    mutating func increment(){
+        count += 1
+    }
+}
+
+var exCounterTwo = CounterTwo()
+exCounterTwo.increment()
+print(exCounterTwo.count)
