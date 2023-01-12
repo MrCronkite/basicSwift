@@ -43,3 +43,15 @@ var bicicle = Bicicle()
 
 print(vehicle.description)
 print(bicicle.description)
+
+class SomeClass {
+    var number: Int
+    
+    required init (num number: Int){
+        self.number = number
+    }
+}
+
+var someClass = SomeClass(num: 10)
+
+print(someClass.number)
