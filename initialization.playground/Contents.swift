@@ -50,6 +50,9 @@ class SomeClass {
     required init (num number: Int){
         self.number = number
     }
+    deinit{
+        print("память освободилась")
+    }
 }
 
 var someClass = SomeClass(num: 10)
