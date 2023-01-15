@@ -23,11 +23,29 @@ class VendingMachine {
      
     var coinsDeposited = 0
     
+    var item = Item(price: 10, count: 10)
+    
     func vend(itemName name: String) throws {
         
         guard inventory[name] != nil else {
             throw VendingMachineError.invalidSelection
         }
         
+        guard item.count > 0 else {
+            throw VendingMachineError.outOfStock
+        }
+               
+        guard item.price <= coinsDeposited else {
+            throw VendingMachineError.insufficientFound(coinsNeed: item.price - coinsDeposited)
+        }
+               
+        coinsDeposited -= item.price
+               
+        var newItem = item
+        newItem.count -= 1
+        inventory[name] = newItem
+               
+        print("Dispensing \(name)")
     }
 }
+
