@@ -6,8 +6,6 @@ enum VendingMachineError: Error {
     case outOfStock
 }
 
-throw VendingMachineError.insufficientFound(coinsNeed: 4)
-
 
 struct Item {
     var price: Int
@@ -49,3 +47,27 @@ class VendingMachine {
     }
 }
 
+let favoriteSnacks = [
+    "Alice": "Chips",
+    "Bob": "Licorice",
+    "Eve": "Pretzels"
+]
+
+func buyFavoriteSnack(person: String, vendingMachine: VendingMachine) throws {
+    let snackName = favoriteSnacks[person] ?? "Candy Bar"
+    try vendingMachine.vend(itemName: snackName)
+}
+
+var vendingMachine = VendingMachine()
+vendingMachine.coinsDeposited = 8
+do {
+    try buyFavoriteSnack(person: "Alice", vendingMachine: vendingMachine)
+} catch VendingMachineError.invalidSelection {
+    print("Ошибка выбора.")
+} catch VendingMachineError.outOfStock {
+    print("Нет в наличии.")
+} catch VendingMachineError.insufficientFound(let coinsNeed) {
+    print("Недостаточно средств. Пожалуйста вставьте еще \(coinsNeed) монетки.")
+} catch {
+    print("Неожиданная ошибка: \(error).")
+}
