@@ -87,3 +87,6 @@ struct BlackjackCard {
 
 let cart = BlackjackCard(rank: .king, suit: .hearts)
 print(cart.description)
+
+
+let heartsSymbol = BlackjackCard.Suit.hearts.rawValue
