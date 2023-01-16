@@ -82,5 +82,8 @@ struct BlackjackCard {
         }
         return output
     }
-    
 }
+
+
+let cart = BlackjackCard(rank: .king, suit: .hearts)
+print(cart.description)
