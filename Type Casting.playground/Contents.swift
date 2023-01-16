@@ -45,3 +45,13 @@ for item in library {
 }
 
 print("В Media библиотеке содержится \(moveCount) фильма и \(songCount) песни")
+
+
+
+struct BlackjackCard {
+    
+    enum Suit: Character {
+        case spades = "♠", hearts = "♡", diamonds = "♢", clubs = "♣"
+    }
+    
+}
