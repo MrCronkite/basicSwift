@@ -28,3 +28,8 @@ class Name: FullyNammed {
         return "\(firstName) \(surname)"
     }
 }
+
+
+var name = Name(firstName: "Vlad", surname: "Dillet")
+
+print(name.fullName)
