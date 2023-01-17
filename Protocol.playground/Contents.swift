@@ -33,3 +33,21 @@ class Name: FullyNammed {
 var name = Name(firstName: "Vlad", surname: "Dillet")
 
 print(name.fullName)
+
+
+protocol Toggable {
+     mutating func togle()
+}
+
+
+enum OnOffSwitch: Toggable {
+    case off, on
+    mutating func togle() {
+        switch self {
+        case .off:
+            self = .on
+        case .on:
+            self = .off
+        }
+    }
+}
