@@ -51,3 +51,7 @@ enum OnOffSwitch: Toggable {
         }
     }
 }
+
+var lightOn = OnOffSwitch.off
+lightOn.togle()
+print(lightOn)
