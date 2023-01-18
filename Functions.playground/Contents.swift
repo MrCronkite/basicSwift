@@ -55,3 +55,15 @@ func printNumber(_ matchFunction: (Int, Int) -> Int, _ a: Int, _ b: Int){
 }
 
 printNumber(addNumber, 10, 12)
+
+
+func someFunk(_ param: Double...) -> Double {
+    var total: Double = 0
+    for i in param {
+        total += i
+    }
+    
+    return total / Double(param.count)
+}
+
+print(someFunk(1, 3, 5, 7, 9))
