@@ -81,9 +81,12 @@ func devide(_ a:Int, _ b:Int) throws ->  Double {
 
 do {
     try devide(0, 12)
-} catch {
-    print(error.localizedDescription)
+} catch let myError {
+    print(myError.localizedDescription)
 }
+
+
+let result = try? devide(0, 23)
 
 
 
