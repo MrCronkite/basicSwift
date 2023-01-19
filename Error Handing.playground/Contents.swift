@@ -71,3 +71,11 @@ do {
 } catch {
     print("Неожиданная ошибка: \(error).")
 }
+
+
+func devide(_ a:Int, _ b:Int) -> Double {
+    return Double(a/b)
+}
+
+
+print(devide(10,5))
