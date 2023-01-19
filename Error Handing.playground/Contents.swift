@@ -1,3 +1,4 @@
+import Foundation
 
 
 enum VendingMachineError: Error {
@@ -73,9 +74,17 @@ do {
 }
 
 
-func devide(_ a:Int, _ b:Int) -> Double {
+func devide(_ a:Int, _ b:Int) throws ->  Double {
+    guard a != 0 else { throw NSError(domain: "pizdec", code: 100) }
     return Double(a/b)
 }
 
+do {
+    let numb = try devide(0, 12)
+} catch
+    SecCopyErrorMessageString(<#T##status: OSStatus##OSStatus#>, <#T##reserved: UnsafeMutableRawPointer?##UnsafeMutableRawPointer?#>)
+}
 
-print(devide(10,5))
+
+
+print(try devide(0,5))
