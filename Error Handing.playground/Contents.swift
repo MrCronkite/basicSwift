@@ -80,11 +80,11 @@ func devide(_ a:Int, _ b:Int) throws ->  Double {
 }
 
 do {
-    let numb = try devide(0, 12)
-} catch
-    SecCopyErrorMessageString(<#T##status: OSStatus##OSStatus#>, <#T##reserved: UnsafeMutableRawPointer?##UnsafeMutableRawPointer?#>)
+    try devide(0, 12)
+} catch {
+    print(error.localizedDescription)
 }
 
 
 
-print(try devide(0,5))
+
