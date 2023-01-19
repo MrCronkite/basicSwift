@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIPopoverPresentationControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,8 +15,17 @@ class ViewController: UIViewController {
     }
     
     
-    @IBAction func tapButton() {
-         print("second")
+    @IBAction func tapButton(sender: UIButton) {
+        let storyboard = UIStoryboard.init(name: "SecondStoryboard", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "secondVC" ) as! SecondVC
+        
+        vc.modalPresentationStyle  = .overCurrentContext
+        vc.modalTransitionStyle = .crossDissolve
+        vc.preferredContentSize = CGSizeMake(300, 300)
+        let pVC = vc.popoverPresentationController
+        
+        
+        show(vc, sender: nil)
     }
     
 

@@ -21,7 +21,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
-                                    <action selector="tapButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Ex-dv-F5f"/>
+                                    <action selector="tapButtonWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z7h-9M-6CE"/>
                                 </connections>
                             </button>
                         </subviews>
