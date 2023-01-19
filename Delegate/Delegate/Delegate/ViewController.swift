@@ -7,7 +7,11 @@
 
 import UIKit
 
-class ViewController: UIViewController, UIPopoverPresentationControllerDelegate {
+class ViewController: UIViewController, UIPopoverPresentationControllerDelegate, SecondScrenDelegate {
+    func getString(text: String?) {
+        print("hello")
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,9 +23,12 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
         let storyboard = UIStoryboard.init(name: "SecondStoryboard", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "secondVC" ) as! SecondVC
         
+       
+        
         vc.modalPresentationStyle  = .overCurrentContext
         vc.modalTransitionStyle = .crossDissolve
         vc.preferredContentSize = CGSizeMake(300, 300)
+        vc.delegate = self
        
         show(vc, sender: nil)
     }

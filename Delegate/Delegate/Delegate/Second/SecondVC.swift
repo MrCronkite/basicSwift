@@ -17,7 +17,7 @@ class SecondVC: UIViewController {
     @IBOutlet weak var actionButton: UIButton!
     @IBOutlet weak var textField: UITextField!
     
-    
+    weak var delegate: SecondScrenDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +26,7 @@ class SecondVC: UIViewController {
     
     
     @objc func getText() {
-        print(textField.text)
+        delegate?.getString(text: textField.text)
+        print(delegate)
     }
 }
