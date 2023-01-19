@@ -27,6 +27,6 @@ class SecondVC: UIViewController {
     
     @objc func getText() {
         delegate?.getString(text: textField.text)
-        print(delegate)
+       
     }
 }

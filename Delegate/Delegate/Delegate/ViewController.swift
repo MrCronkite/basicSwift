@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController, UIPopoverPresentationControllerDelegate, SecondScrenDelegate {
     func getString(text: String?) {
-        print("hello")
+        print(text)
     }
     
 
