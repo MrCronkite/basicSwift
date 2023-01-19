@@ -22,9 +22,7 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate 
         vc.modalPresentationStyle  = .overCurrentContext
         vc.modalTransitionStyle = .crossDissolve
         vc.preferredContentSize = CGSizeMake(300, 300)
-        let pVC = vc.popoverPresentationController
-        
-        
+       
         show(vc, sender: nil)
     }
     
