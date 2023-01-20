@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UIPopoverPresentationControllerDelegate, SecondScrenDelegate {
+class ViewController: UIViewController, SecondScrenDelegate {
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -19,10 +19,9 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate,
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        tableView.delegate = self
         
     }
-    
     
     @IBAction func tapButton(sender: UIButton) {
         let storyboard = UIStoryboard.init(name: "SecondStoryboard", bundle: nil)
@@ -31,7 +30,7 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate,
         vc.modalTransitionStyle = .crossDissolve
         vc.preferredContentSize = CGSizeMake(300, 300)
         vc.delegate = self
-       
+        
         show(vc, sender: nil)
     }
 }
@@ -42,8 +41,14 @@ extension ViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        var cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! SomeCell
         return cell
     }
 }
 
+
+extension ViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("hello \(indexPath.row)")
+    }
+}
