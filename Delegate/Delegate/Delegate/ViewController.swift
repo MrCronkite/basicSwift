@@ -8,11 +8,11 @@
 import UIKit
 
 class ViewController: UIViewController, UIPopoverPresentationControllerDelegate, SecondScrenDelegate {
+    
     func getString(text: String?) {
-        print(text)
+        print(text ?? "nil")
     }
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
         

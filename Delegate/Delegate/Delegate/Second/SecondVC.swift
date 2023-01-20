@@ -22,11 +22,20 @@ class SecondVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         actionButton.addTarget(self, action: #selector(getText), for: .touchUpInside)
+        textField.delegate = self
     }
     
     
     @objc func getText() {
         delegate?.getString(text: textField.text)
        
+    }
+}
+
+
+extension SecondVC: UITextFieldDelegate {
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        print(string)
+        return true
     }
 }
