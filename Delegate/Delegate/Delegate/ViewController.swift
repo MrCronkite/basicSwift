@@ -42,6 +42,7 @@ extension ViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! SomeCell
+        cell.delegate = self
         return cell
     }
 }
@@ -51,4 +52,14 @@ extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("hello \(indexPath.row)")
     }
+}
+
+
+extension ViewController: DelegateCell {
+    func didCell(_ cell: SomeCell) {
+        guard let indexPath = tableView.indexPath(for: cell) else {return}
+        print(indexPath.row)
+    }
+    
+    
 }

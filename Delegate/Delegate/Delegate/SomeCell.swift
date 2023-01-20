@@ -8,11 +8,17 @@
 import UIKit
 
 
+protocol DelegateCell: AnyObject {
+    func didCell(_ cell: SomeCell)
+}
+
 
 class SomeCell: UITableViewCell {
     
+    weak var delegate: DelegateCell?
+    
     @IBAction func didTapButton() {
-        print("hello")
+        delegate?.didCell(self)
         
     }
     
