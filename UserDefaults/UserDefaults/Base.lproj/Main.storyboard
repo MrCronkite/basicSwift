@@ -43,6 +43,9 @@
                                     <segment title="🐍"/>
                                     <segment title="🦞"/>
                                 </segments>
+                                <connections>
+                                    <action selector="segmentState:" destination="BYZ-38-t0r" eventType="valueChanged" id="pEO-zs-pR8"/>
+                                </connections>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cJT-Uj-ZXa">
                                 <rect key="frame" x="56" y="426" width="61" height="35"/>
@@ -51,6 +54,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Save"/>
+                                <connections>
+                                    <action selector="saveButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gwL-DV-gT6"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eVq-Z0-4xW">
                                 <rect key="frame" x="256.66666666666669" y="426" width="73.333333333333314" height="35"/>
@@ -59,6 +65,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Delete"/>
+                                <connections>
+                                    <action selector="deleteButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i14-de-tgl"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -79,8 +88,6 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="buttonDelete" destination="eVq-Z0-4xW" id="aQ6-ZI-hDj"/>
-                        <outlet property="buttonSave" destination="cJT-Uj-ZXa" id="fLV-zK-yKs"/>
                         <outlet property="segmentControl" destination="nL7-c4-DBI" id="lgE-sk-Uf5"/>
                         <outlet property="statusLabel" destination="J1H-ih-9z9" id="qJF-lA-IUO"/>
                         <outlet property="textField" destination="CfI-p4-b8D" id="zbh-c4-ETZ"/>
