@@ -36,6 +36,10 @@ class ViewController: UIViewController {
     
     
     @IBAction func deleteButton(_ sender: Any) {
+        let keys = [numberOfLaunch, inputText, segmentIndex]
+        keys.forEach {
+            UserDefaults.standard.set(nil, forKey: $0)
+        }
     }
     
     @IBAction func segmentState(_ sender: UISegmentedControl) {
