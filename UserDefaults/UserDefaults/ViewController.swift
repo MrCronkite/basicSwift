@@ -21,9 +21,16 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        saveCurentLaunch()
+        statusLabel.text = "Запусков приложений \(UserDefaults.standard.integer(forKey: "NumberOfLaunches"))"
     }
-
+    
+    
+    func saveCurentLaunch() {
+        let save = UserDefaults.standard.integer(forKey: "NumberOfLaunches")
+        UserDefaults.standard.set(save + 1, forKey: "NumberOfLaunches")
+    }
 
 }
 
