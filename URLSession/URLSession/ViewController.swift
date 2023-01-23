@@ -17,13 +17,14 @@ class ViewController: UIViewController {
     
     
     func dataRequest() {
-        let request = URLRequest(url: URL(string: "https://api2.binance.com/api/v3/ticker/24hr")!)
+        let request = URLRequest(url: URL(string: "https://api.kucoin.com/api/v1/market/stats?symbol=BTC-USDT")!)
         
-        var dataTask = URLSession.shared.dataTask(with: request) { data, response , error in
+        let dataTask = URLSession.shared.dataTask(with: request) { data, response , error in
             
             print(String(decoding: data!, as: UTF8.self))
-            print(error ?? "нет ошибки")
+            //print(error ?? "нет ошибки")
         }
+        dataTask.resume()
     }
 
 
