@@ -17,7 +17,9 @@ class ViewController: UIViewController {
     
     
     func dataRequest() {
-        let request = URLRequest(url: URL(string: "https://api.kucoin.com/api/v1/market/stats?symbol=BTC-USDT")!)
+        var request = URLRequest(url: URL(string: "https://api.kucoin.com/api/v1/market/stats?symbol=BTC-USDT")!)
+        request.allHTTPHeaderFields = ["authToken": "nil"]
+        request.httpMethod = "GET"
         
         let dataTask = URLSession.shared.dataTask(with: request) { data, response , error in
             
