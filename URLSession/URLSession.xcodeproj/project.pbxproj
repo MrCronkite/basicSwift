@@ -13,6 +13,7 @@
 		B2455D9B297F095A0021A803 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2455D99297F095A0021A803 /* Main.storyboard */; };
 		B2455D9D297F095D0021A803 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2455D9C297F095D0021A803 /* Assets.xcassets */; };
 		B2455DA0297F095D0021A803 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2455D9E297F095D0021A803 /* LaunchScreen.storyboard */; };
+		B2455DA829806F050021A803 /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2455DA729806F040021A803 /* Coin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		B2455D9C297F095D0021A803 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2455D9F297F095D0021A803 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B2455DA1297F095D0021A803 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2455DA729806F040021A803 /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				B2455D93297F095A0021A803 /* AppDelegate.swift */,
 				B2455D95297F095A0021A803 /* SceneDelegate.swift */,
 				B2455D97297F095A0021A803 /* ViewController.swift */,
+				B2455DA729806F040021A803 /* Coin.swift */,
 				B2455D99297F095A0021A803 /* Main.storyboard */,
 				B2455D9C297F095D0021A803 /* Assets.xcassets */,
 				B2455D9E297F095D0021A803 /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			files = (
 				B2455D98297F095A0021A803 /* ViewController.swift in Sources */,
 				B2455D94297F095A0021A803 /* AppDelegate.swift in Sources */,
+				B2455DA829806F050021A803 /* Coin.swift in Sources */,
 				B2455D96297F095A0021A803 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
