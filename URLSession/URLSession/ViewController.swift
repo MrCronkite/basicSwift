@@ -22,9 +22,9 @@ class ViewController: UIViewController {
         request.httpMethod = "GET"
         
         let dataTask = URLSession.shared.dataTask(with: request) { data, response , error in
-            
-            print(String(decoding: data!, as: UTF8.self))
-            //print(error ?? "нет ошибки")
+            if let data = data, let coin = try? JSONDecoder().decode(Coin.self, from: data) {
+                print(coin.data)
+            }
         }
         dataTask.resume()
     }
