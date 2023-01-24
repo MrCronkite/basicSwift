@@ -23,7 +23,8 @@ class ViewController: UIViewController {
         
         let dataTask = URLSession.shared.dataTask(with: request) { data, response , error in
             if let data = data, let coin = try? JSONDecoder().decode(Coin.self, from: data) {
-                print(coin.data)
+                print(coin.data.sell)
+                print(coin.data.symbol)
             }
         }
         dataTask.resume()
