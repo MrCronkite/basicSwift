@@ -18,4 +18,15 @@ enum ApiType {
     var baseUrl: String {
         return "https://jsonplaceholder.typicode.com/"
     }
+    
+    var headers: [String: String] {
+        switch self {
+        case .login:
+            return ["authToken" : "12345"]
+        default:
+            return [:]
+        }
+    }
+    
+    
 }
