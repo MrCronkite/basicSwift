@@ -59,4 +59,9 @@ enum ApiType {
 class ApiManager {
     
     static let shared = ApiManager()
+    
+    func getUsers(completion: @escaping (User) -> Void) {
+        
+    }
+    
 }
