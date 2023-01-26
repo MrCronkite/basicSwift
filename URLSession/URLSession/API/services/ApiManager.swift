@@ -60,8 +60,16 @@ class ApiManager {
     
     static let shared = ApiManager()
     
-    func getUsers(completion: @escaping (User) -> Void) {
-        
+    func getUsers(completion: @escaping (Users) -> Void) {
+        let request = ApiType.getUsers.request
+        let task = URLSession.shared.dataTask(with: request) { data , response , error in
+            if let data = data, let users = try? JSONDecoder().decode(Users.self, from: data) {
+                completion(users)
+            } else {
+                completion([])
+            }
+        }
+        task.resume()
     }
     
 }

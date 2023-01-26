@@ -13,6 +13,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         dataRequest()
+        
+        ApiManager.shared.getUsers { users in
+            print(users.count)
+        }
     }
     
     
