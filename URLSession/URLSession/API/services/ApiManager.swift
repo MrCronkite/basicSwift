@@ -91,7 +91,10 @@ class ApiManager {
                 completion([])
             }
         }
+        
         task.resume()
     }
     
 }
+
+
