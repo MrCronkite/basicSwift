@@ -17,6 +17,14 @@ class ViewController: UIViewController {
         ApiManager.shared.getUsers { users in
             print(users.count)
         }
+        
+        ApiManager.shared.getAlboms { alboms in
+            print(alboms.count)
+        }
+        
+        ApiManager.shared.getPosts { posts in
+            print(posts.count)
+        }
     }
     
     
@@ -33,7 +41,5 @@ class ViewController: UIViewController {
         }
         dataTask.resume()
     }
-
-
 }
 

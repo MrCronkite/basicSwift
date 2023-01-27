@@ -49,8 +49,6 @@ enum ApiType {
             request.httpMethod = "GET"
             return request
         }
-        
-        
     }
     
 }
@@ -65,6 +63,30 @@ class ApiManager {
         let task = URLSession.shared.dataTask(with: request) { data , response , error in
             if let data = data, let users = try? JSONDecoder().decode(Users.self, from: data) {
                 completion(users)
+            } else {
+                completion([])
+            }
+        }
+        task.resume()
+    }
+    
+    func getAlboms(completion: @escaping (Alboms) -> Void) {
+        let request = ApiType.getAlbums.request
+        let task = URLSession.shared.dataTask(with: request) { data , response , error in
+            if let data = data, let alboms = try? JSONDecoder().decode(Alboms.self, from: data) {
+                completion(alboms)
+            } else {
+                completion([])
+            }
+        }
+        task.resume()
+    }
+    
+    func getPosts(completion: @escaping (Posts) -> Void) {
+        let request = ApiType.getPosts.request
+        let task = URLSession.shared.dataTask(with: request) { data , response , error in
+            if let data = data, let posts = try? JSONDecoder().decode(Posts.self, from: data) {
+                completion(posts)
             } else {
                 completion([])
             }
