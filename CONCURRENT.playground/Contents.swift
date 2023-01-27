@@ -51,3 +51,15 @@ mySerialQueue.async {
 
 sleep (1)
 
+let sirealQueue1 = DispatchQueue(label: "queue1", qos: .background)
+let sirealQueue2 = DispatchQueue(label: "queue2", qos: .userInitiated)
+
+sirealQueue2.async {
+    task("🐡")
+}
+
+sirealQueue1.async {
+    task("🦍")
+}
+
+sleep(1)
