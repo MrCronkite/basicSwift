@@ -22,3 +22,32 @@ func taskHIGH(_ symbol: String) {
 }
 
 
+print("______Sinc__________")
+
+userQueue.sync {
+    task("☠️")
+}
+task("🪰")
+
+sleep(2)
+
+
+print("___________Asinc________")
+
+userQueue.async {
+    task("☠️")
+}
+task("🪰")
+
+let mySerialQueue = DispatchQueue(label: "best,mySerial", qos: .userInitiated)
+
+mySerialQueue.async {
+    task("🎃")
+}
+
+mySerialQueue.async {
+    task("🤖")
+}
+
+sleep (1)
+
