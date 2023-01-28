@@ -63,3 +63,18 @@ sirealQueue1.async {
 }
 
 sleep(1)
+
+
+print("_________Concurent_Private___")
+
+
+let workerQueue = DispatchQueue(label: "Queue1", qos: .userInitiated, attributes: .concurrent)
+
+workerQueue.async { task("🦚")}
+workerQueue.async { task("🦢")}
+
+sleep(2)
+
+
+
+
