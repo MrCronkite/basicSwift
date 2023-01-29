@@ -27,5 +27,27 @@ func fetchImage() {
     }
 }
 
+func asyncLoadImage(imageURL: URL,
+                    runQueue: DispatchQueue,
+                    complitionQueue: DispatchQueue,
+                    complition: @escaping (UIImage?, Error?) -> ()){
+    runQueue.async {
+        do{
+            let data = try Data(contentsOf: imageURL)
+            complitionQueue.async { complition(UIImage(data: data), nil)}
+        } catch let error {
+            complitionQueue.async {
+                complitionQueue.async { complition(nil, error)}
+            }
+        }
+    }
+}
 
+
+func fetchImage1() {
+    asyncLoadImage(imageURL: imageURL, runQueue: DispatchQueue.global(), complitionQueue: DispatchQueue.main) { result , error in
+        guard let image = result else {return}
+        eiffelImage.image = image
+    }
+}
 
