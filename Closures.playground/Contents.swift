@@ -59,9 +59,12 @@ func complit() -> Void {
     print("hello")
 }
 
-func becnh(_ closure: () -> Void) {
+func becnh(_  closure: @escaping () -> Void) {
     let startTime = Date()
-    closure()
+    
+    DispatchQueue.main.async {
+        closure()
+    }
     let endTime = Date()
     
     let timeInterval = endTime.timeIntervalSince(startTime)
@@ -72,5 +75,7 @@ func becnh(_ closure: () -> Void) {
 becnh {
     print("hello Vlad")
 }
+
+
 
 
