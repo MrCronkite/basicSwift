@@ -1,3 +1,4 @@
+import Foundation
 
 var names = ["Kolia", "Roma", "Ignat", "Ruslan"]
 
@@ -56,6 +57,20 @@ func escap(closure: @escaping () -> Void){
 
 func complit() -> Void {
     print("hello")
+}
+
+func becnh(_ closure: () -> Void) {
+    let startTime = Date()
+    closure()
+    let endTime = Date()
+    
+    let timeInterval = endTime.timeIntervalSince(startTime)
+    print(timeInterval)
+}
+
+
+becnh {
+    print("hello Vlad")
 }
 
 
