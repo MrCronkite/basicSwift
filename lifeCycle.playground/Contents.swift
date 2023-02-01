@@ -38,8 +38,13 @@ class vievController: UIViewController {
         print("viewDidAppear")
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        print("viewWillDisappear")
+    }
+    
 }
 
 
-PlaygroundPage.current.liveView = vievController() as any PlaygroundLiveViewable
+PlaygroundPage.current.liveView = vievController()
 
