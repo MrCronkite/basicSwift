@@ -4,15 +4,16 @@ import PlaygroundSupport
 
 PlaygroundPage.current.needsIndefiniteExecution = true
 
-var view = UIView(frame: CGRect(x: 0, y: 0, width: 300, height: 300))
-view.backgroundColor = .gray
 
-func viewDidLoad(){
+class vievController: UIViewController {
     
-    print("hello world")
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        print("hello world")
+    }
     
 }
 
 
-PlaygroundPage.current.liveView = view
+PlaygroundPage.current.liveView = vievController() as any PlaygroundLiveViewable
 
