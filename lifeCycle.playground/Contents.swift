@@ -7,9 +7,20 @@ PlaygroundPage.current.needsIndefiniteExecution = true
 
 class vievController: UIViewController {
     
+    
+    override func loadView() {
+        super.loadView()
+        print("loadView")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("hello world")
+        print("viewDidLoad")
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        print("viewWillAppear")
     }
     
 }
