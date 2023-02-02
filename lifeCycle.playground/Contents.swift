@@ -8,14 +8,23 @@ PlaygroundPage.current.needsIndefiniteExecution = true
 class vievController: UIViewController {
     
     
+    let button = UIButton()
+    
+    
     override func loadView() {
         super.loadView()
+        
         print("loadView")
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         print("viewDidLoad")
+        
+        button.frame(forAlignmentRect: CGRect(x: 10, y: 10, width: 100, height: 100))
+        button.setTitle("Click", for: .normal)
+        button.setTitleColor(.blue, for: .normal)
+        view.addSubview(button)
     }
     
     override func viewWillAppear(_ animated: Bool) {
