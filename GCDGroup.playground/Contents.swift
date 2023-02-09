@@ -39,4 +39,16 @@ var images = [UIImage] ()
 PlaygroundPage.current.liveView = view
 
 
+func asyncLoadImage(imageURL: URL, runQueue: DispatchQueue, completionQueue: DispatchQueue, completion: @escaping (UIImage?, Error?) -> ()) {
+    runQueue.async {
+        do {
+            let data = try Data(contentsOf: imageURL)
+            completionQueue.async { completion(UIImage(data: data), nil)}
+        } catch let error {
+            completionQueue.async { completion(nil, error)}
+        }
+    }
+}
+
+
 
