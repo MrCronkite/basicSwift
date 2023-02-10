@@ -76,3 +76,23 @@ func asyncGroup(){
 }
 
 asyncGroup()
+
+let group = DispatchGroup()
+
+func loadPage(i: Int, complition: @escaping () -> Void) {
+    DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+        complition()
+    }
+}
+
+for i in 0...5 {
+    group.enter()
+    loadPage(i: i) {
+        print("Page \(i) loaded")
+        group.leave()
+    }
+}
+
+group.notify(queue: .main) {
+    print("all pages loades")
+}
