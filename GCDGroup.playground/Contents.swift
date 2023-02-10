@@ -2,7 +2,9 @@
 import UIKit
 import PlaygroundSupport
 
-public class EightImages: UIView{
+
+@available(iOS 15, *)
+ public class EightImages: UIView {
     public var ivs = [UIImageView] ()
     
     public override init(frame: CGRect) {
@@ -52,7 +54,7 @@ func asyncLoadImage(imageURL: URL, runQueue: DispatchQueue, completionQueue: Dis
 
 
 
-func ayncGroup(){
+func asyncGroup(){
     let aGroup = DispatchGroup()
     
     for i in 0...3 {
@@ -72,3 +74,5 @@ func ayncGroup(){
         }
     }
 }
+
+asyncGroup()
