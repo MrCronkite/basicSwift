@@ -52,3 +52,23 @@ func asyncLoadImage(imageURL: URL, runQueue: DispatchQueue, completionQueue: Dis
 
 
 
+func ayncGroup(){
+    let aGroup = DispatchGroup()
+    
+    for i in 0...3 {
+        aGroup.enter()
+        asyncLoadImage(imageURL: URL(string: imageURLs[i])!,
+                       runQueue: DispatchQueue.global(),
+                       completionQueue: DispatchQueue.main) { result, error in
+            guard let image1 = result else {return}
+            images.append(image1)
+            aGroup.leave()
+        }
+    }
+    
+    aGroup.notify(queue: DispatchQueue.main) {
+        for i in 0...3 {
+            view.ivs[i].image = images[i]
+        }
+    }
+}
