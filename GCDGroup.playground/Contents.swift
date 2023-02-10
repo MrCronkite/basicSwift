@@ -68,7 +68,7 @@ func asyncGroup(){
         }
     }
     
-    aGroup.notify(queue: DispatchQueue.main) {
+    aGroup.notify(queue: .main) {
         for i in 0...3 {
             view.ivs[i].image = images[i]
         }
