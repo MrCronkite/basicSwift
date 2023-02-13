@@ -14,9 +14,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
     }
-
-    private func initiated {
-        //initiated
-    }
+//
+//    private func initiated {
+//        //initiated
+//    }
 }
 

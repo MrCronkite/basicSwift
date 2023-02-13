@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B264F671299ABDF200D058E1 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B264F670299ABDF200D058E1 /* AccountView.swift */; };
 		B2D6ABA929995722007A8259 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D6ABA829995722007A8259 /* AppDelegate.swift */; };
 		B2D6ABAB29995722007A8259 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D6ABAA29995722007A8259 /* SceneDelegate.swift */; };
 		B2D6ABAD29995722007A8259 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D6ABAC29995722007A8259 /* ViewController.swift */; };
@@ -19,7 +20,8 @@
 /* Begin PBXFileReference section */
 		1F27D7A39F59F12744E385EC /* Pods_SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A982E955F1CD90F85621AF7D /* Pods-SnapKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapKit.release.xcconfig"; path = "Target Support Files/Pods-SnapKit/Pods-SnapKit.release.xcconfig"; sourceTree = "<group>"; };
-		B2D6ABA529995722007A8259 /* SnapKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B264F670299ABDF200D058E1 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		B2D6ABA529995722007A8259 /* SnapKitProgect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapKitProgect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2D6ABA829995722007A8259 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2D6ABAA29995722007A8259 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B2D6ABAC29995722007A8259 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,7 +57,7 @@
 		B2D6ABA629995722007A8259 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B2D6ABA529995722007A8259 /* SnapKit.app */,
+				B2D6ABA529995722007A8259 /* SnapKitProgect.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +72,7 @@
 				B2D6ABB129995724007A8259 /* Assets.xcassets */,
 				B2D6ABB329995724007A8259 /* LaunchScreen.storyboard */,
 				B2D6ABB629995724007A8259 /* Info.plist */,
+				B264F670299ABDF200D058E1 /* AccountView.swift */,
 			);
 			path = SnapKit;
 			sourceTree = "<group>";
@@ -80,7 +83,6 @@
 				ED90D1857700135DCEFDECC9 /* Pods-SnapKit.debug.xcconfig */,
 				A982E955F1CD90F85621AF7D /* Pods-SnapKit.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -95,9 +97,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B2D6ABA429995722007A8259 /* SnapKit */ = {
+		B2D6ABA429995722007A8259 /* SnapKitProgect */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B2D6ABB929995724007A8259 /* Build configuration list for PBXNativeTarget "SnapKit" */;
+			buildConfigurationList = B2D6ABB929995724007A8259 /* Build configuration list for PBXNativeTarget "SnapKitProgect" */;
 			buildPhases = (
 				07B2A960BDB2622971414B76 /* [CP] Check Pods Manifest.lock */,
 				B2D6ABA129995722007A8259 /* Sources */,
@@ -109,9 +111,9 @@
 			);
 			dependencies = (
 			);
-			name = SnapKit;
+			name = SnapKitProgect;
 			productName = SnapKit;
-			productReference = B2D6ABA529995722007A8259 /* SnapKit.app */;
+			productReference = B2D6ABA529995722007A8259 /* SnapKitProgect.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -129,7 +131,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B2D6ABA029995722007A8259 /* Build configuration list for PBXProject "SnapKit" */;
+			buildConfigurationList = B2D6ABA029995722007A8259 /* Build configuration list for PBXProject "SnapKitProgect" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -142,7 +144,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B2D6ABA429995722007A8259 /* SnapKit */,
+				B2D6ABA429995722007A8259 /* SnapKitProgect */,
 			);
 		};
 /* End PBXProject section */
@@ -207,6 +209,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B264F671299ABDF200D058E1 /* AccountView.swift in Sources */,
 				B2D6ABAD29995722007A8259 /* ViewController.swift in Sources */,
 				B2D6ABA929995722007A8259 /* AppDelegate.swift in Sources */,
 				B2D6ABAB29995722007A8259 /* SceneDelegate.swift in Sources */,
@@ -410,7 +413,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B2D6ABA029995722007A8259 /* Build configuration list for PBXProject "SnapKit" */ = {
+		B2D6ABA029995722007A8259 /* Build configuration list for PBXProject "SnapKitProgect" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B2D6ABB729995724007A8259 /* Debug */,
@@ -419,7 +422,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B2D6ABB929995724007A8259 /* Build configuration list for PBXNativeTarget "SnapKit" */ = {
+		B2D6ABB929995724007A8259 /* Build configuration list for PBXNativeTarget "SnapKitProgect" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B2D6ABBA29995724007A8259 /* Debug */,

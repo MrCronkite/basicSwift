@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DFD3C85D47950C5E1C765AEE5D5BED09"
-               BuildableName = "Pods_SnapKit.framework"
-               BlueprintName = "Pods-SnapKit"
-               ReferencedContainer = "container:Pods.xcodeproj">
+               BlueprintIdentifier = "B2D6ABA429995722007A8259"
+               BuildableName = "SnapKitProgect.app"
+               BlueprintName = "SnapKitProgect"
+               ReferencedContainer = "container:SnapKitProgect.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -40,6 +40,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "B2D6ABA429995722007A8259"
+            BuildableName = "SnapKitProgect.app"
+            BlueprintName = "SnapKitProgect"
+            ReferencedContainer = "container:SnapKitProgect.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -47,6 +57,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "B2D6ABA429995722007A8259"
+            BuildableName = "SnapKitProgect.app"
+            BlueprintName = "SnapKitProgect"
+            ReferencedContainer = "container:SnapKitProgect.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
