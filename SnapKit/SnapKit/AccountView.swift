@@ -10,6 +10,10 @@ import UIKit
 
 class AccountView: UIView {
     
+    func configure(with info: AccountViewInfo) {
+        
+    }
+    
     init() {
         super.init(frame: .zero)
         initialize()
