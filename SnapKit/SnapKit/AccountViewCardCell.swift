@@ -13,9 +13,7 @@ class AccountViewCardCell: UICollectionViewCell {
     func configure(with image: UIImage) {
         imageView.image = image
     }
-    
-    
-    //MARK: - Init
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         initialize()
@@ -25,7 +23,6 @@ class AccountViewCardCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    //MARK: - Private properties
     private let imageView: UIImageView = {
         let view = UIImageView()
         return view
@@ -33,7 +30,6 @@ class AccountViewCardCell: UICollectionViewCell {
 }
 
 
-//MARK: - Private methods
 private extension AccountViewCardCell {
     func initialize() {
         contentView.addSubview(imageView)
