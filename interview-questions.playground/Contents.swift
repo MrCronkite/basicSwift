@@ -1,4 +1,7 @@
 // Swift
+import UIKit
+import PlaygroundSupport
+
 class Singleton {
 
     private static var uniqueInstance: Singleton?
@@ -13,3 +16,7 @@ class Singleton {
     }
 
 }
+
+typealias Decoration<T> = (T) -> Void
+
+
