@@ -20,3 +20,6 @@ class Singleton {
 typealias Decoration<T> = (T) -> Void
 
 
+var vmm = Decoder
+
+
