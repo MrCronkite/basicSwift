@@ -17,9 +17,10 @@ class Singleton {
 
 }
 
+
+
+//MARK: - Decorator
 typealias Decoration<T> = (T) -> Void
 
-
-var vmm = Decoder
 
 
