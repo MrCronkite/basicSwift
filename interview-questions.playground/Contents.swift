@@ -23,4 +23,9 @@ class Singleton {
 typealias Decoration<T> = (T) -> Void
 
 
+//MARK: - Observing
+
+
+
+
 
