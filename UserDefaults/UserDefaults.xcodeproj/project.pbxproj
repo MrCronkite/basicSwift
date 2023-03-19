@@ -13,6 +13,7 @@
 		B2009408297DC0FB00E2171C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2009406297DC0FB00E2171C /* Main.storyboard */; };
 		B200940A297DC0FE00E2171C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2009409297DC0FE00E2171C /* Assets.xcassets */; };
 		B200940D297DC0FE00E2171C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B200940B297DC0FE00E2171C /* LaunchScreen.storyboard */; };
+		B2E5FCF429C7A5B900F71F9D /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E5FCF329C7A5B900F71F9D /* StoreManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		B2009409297DC0FE00E2171C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B200940C297DC0FE00E2171C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B200940E297DC0FE00E2171C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2E5FCF329C7A5B900F71F9D /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				B2009409297DC0FE00E2171C /* Assets.xcassets */,
 				B200940B297DC0FE00E2171C /* LaunchScreen.storyboard */,
 				B200940E297DC0FE00E2171C /* Info.plist */,
+				B2E5FCF329C7A5B900F71F9D /* StoreManager.swift */,
 			);
 			path = UserDefaults;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2009405297DC0FB00E2171C /* ViewController.swift in Sources */,
+				B2E5FCF429C7A5B900F71F9D /* StoreManager.swift in Sources */,
 				B2009401297DC0FB00E2171C /* AppDelegate.swift in Sources */,
 				B2009403297DC0FB00E2171C /* SceneDelegate.swift in Sources */,
 			);
