@@ -9,19 +9,25 @@
 /* Begin PBXBuildFile section */
 		B29E772D2A02DC1E000C0FD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29E772C2A02DC1E000C0FD3 /* AppDelegate.swift */; };
 		B29E772F2A02DC1E000C0FD3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29E772E2A02DC1E000C0FD3 /* SceneDelegate.swift */; };
-		B29E77312A02DC1E000C0FD3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29E77302A02DC1E000C0FD3 /* ViewController.swift */; };
+		B29E77312A02DC1E000C0FD3 /* FruitListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29E77302A02DC1E000C0FD3 /* FruitListViewController.swift */; };
 		B29E77362A02DC21000C0FD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B29E77352A02DC21000C0FD3 /* Assets.xcassets */; };
 		B29E77392A02DC21000C0FD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B29E77372A02DC21000C0FD3 /* LaunchScreen.storyboard */; };
+		B29E77432A02E109000C0FD3 /* FruitListViewPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29E77422A02E109000C0FD3 /* FruitListViewPresenterProtocol.swift */; };
+		B29E77452A02E1E3000C0FD3 /* FruitListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29E77442A02E1E3000C0FD3 /* FruitListInteractor.swift */; };
+		B29E77472A02E28D000C0FD3 /* FruitListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29E77462A02E28D000C0FD3 /* FruitListRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B29E77292A02DC1E000C0FD3 /* VIPER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VIPER.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B29E772C2A02DC1E000C0FD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B29E772E2A02DC1E000C0FD3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B29E77302A02DC1E000C0FD3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B29E77302A02DC1E000C0FD3 /* FruitListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitListViewController.swift; sourceTree = "<group>"; };
 		B29E77352A02DC21000C0FD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B29E77382A02DC21000C0FD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B29E773A2A02DC21000C0FD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B29E77422A02E109000C0FD3 /* FruitListViewPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitListViewPresenterProtocol.swift; sourceTree = "<group>"; };
+		B29E77442A02E1E3000C0FD3 /* FruitListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitListInteractor.swift; sourceTree = "<group>"; };
+		B29E77462A02E28D000C0FD3 /* FruitListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitListRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +61,11 @@
 			isa = PBXGroup;
 			children = (
 				B29E77412A02DC8B000C0FD3 /* Application */,
-				B29E77302A02DC1E000C0FD3 /* ViewController.swift */,
+				B29E77302A02DC1E000C0FD3 /* FruitListViewController.swift */,
+				B29E77422A02E109000C0FD3 /* FruitListViewPresenterProtocol.swift */,
+				B29E77442A02E1E3000C0FD3 /* FruitListInteractor.swift */,
 				B29E77402A02DC6E000C0FD3 /* SupportingFilles */,
+				B29E77462A02E28D000C0FD3 /* FruitListRouter.swift */,
 			);
 			path = VIPER;
 			sourceTree = "<group>";
@@ -150,8 +159,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B29E77312A02DC1E000C0FD3 /* ViewController.swift in Sources */,
+				B29E77312A02DC1E000C0FD3 /* FruitListViewController.swift in Sources */,
 				B29E772D2A02DC1E000C0FD3 /* AppDelegate.swift in Sources */,
+				B29E77432A02E109000C0FD3 /* FruitListViewPresenterProtocol.swift in Sources */,
+				B29E77472A02E28D000C0FD3 /* FruitListRouter.swift in Sources */,
+				B29E77452A02E1E3000C0FD3 /* FruitListInteractor.swift in Sources */,
 				B29E772F2A02DC1E000C0FD3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
