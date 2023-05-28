@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		B20A96B02A23DAB100DD61E0 /* 1.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20A96AF2A23DAB100DD61E0 /* 1.swift */; };
+		B20A96B22A23E24600DD61E0 /* 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20A96B12A23E24600DD61E0 /* 2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B20A96962A23D9A900DD61E0 /* Questions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Questions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B20A96AF2A23DAB100DD61E0 /* 1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1.swift; sourceTree = "<group>"; };
+		B20A96B12A23E24600DD61E0 /* 2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 			isa = PBXGroup;
 			children = (
 				B20A96AF2A23DAB100DD61E0 /* 1.swift */,
+				B20A96B12A23E24600DD61E0 /* 2.swift */,
 			);
 			path = Questions;
 			sourceTree = "<group>";
@@ -119,6 +122,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B20A96B22A23E24600DD61E0 /* 2.swift in Sources */,
 				B20A96B02A23DAB100DD61E0 /* 1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
