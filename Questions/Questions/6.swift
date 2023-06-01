@@ -17,6 +17,6 @@ import Foundation
   
 
   */
-
 //Подробнее о механизме Copy-on-wirite написаны в статье:
-https://ios-interview.ru/copy-on-write/
+URL(string: "https://ios-interview.ru/copy-on-write/")
+
