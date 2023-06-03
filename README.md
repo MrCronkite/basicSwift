@@ -46,5 +46,20 @@
       то поскольку класс хранится в куче, то и структура сохраняется в куче.
 
       Дополнительное чтение: 
-  <a href="https://ios-interview.ru/value-and-reference-type/">Getting Pixels onto the Screen</a>
+  <a href="https://ios-interview.ru/value-and-reference-type/">Value Type и Reference Type или чем стек отличается от кучи?</a>
+      
+- 🗞️ Чем отличается frame от bounds? <details> <summary>  Ответ </summary>
+     
+      Frame — задается относительно собственного superview, 
+      Bounds — относительно собственной координатной системы.
+      
+  ```Swift
+    let view = UIView() 
+    view.frame = CGRect(x: 0, y: 0, width: 50, height: 50)
+      
+    print(view.frame) // (0.0, 0.0, 50.0, 50.0) 
+    print(view.bounds) // (0.0, 0.0, 50.0, 50.0)
+  ```
+  <a href="https://programmingwithswift.com/difference-between-frame-and-bounds-in-swift/#:~:text=TLDR%3A%20Bounds%20refers%20to%20the,the%20views%20parent%20coordinate%20system.">Difference between Frame and Bounds in Swift</a>
+ 
 
