@@ -13,12 +13,12 @@
 - 🔖 Расскажите о диспетчеризации методов <a href="https://github.com/MrCronkite/basicSwift/blob/main/Questions/Questions/9.swift">Ответ</a>
 - 🔖 Расскажите о методе hitTest <a href="https://github.com/MrCronkite/basicSwift/blob/main/Questions/Questions/10.swift">Ответ</a>
 - 🔖 Как работает UIGestureRecognizer? <a href="https://github.com/MrCronkite/basicSwift/blob/main/Questions/Questions/11.swift">Ответ</a>
--  <a href="https://github.com/MrCronkite/basicSwift/blob/main/Questions/Questions/12.swift">Ответ</a>
-- 🔖 <a href="https://github.com/MrCronkite/basicSwift/blob/main/Questions/Questions/13.swift">Ответ</a>
-
+- 
 - ### 🔖 Что такое typealias в Swift?
-      <details> <summary>  Ответ </summary>
-       typealias является псевдонимом для существующего типа данных. Рассмотрим пример
+     <details> <summary>  Ответ </summary>
+      
+       typealias является псевдонимом для существующего типа данных. 
+       Рассмотрим пример:
 
     ```Swift
       typealias Dollar = Double
