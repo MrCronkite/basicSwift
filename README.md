@@ -13,8 +13,27 @@
 - 🔖 Расскажите о диспетчеризации методов <a href="https://github.com/MrCronkite/basicSwift/blob/main/Questions/Questions/9.swift">Ответ</a>
 - 🔖 Расскажите о методе hitTest <a href="https://github.com/MrCronkite/basicSwift/blob/main/Questions/Questions/10.swift">Ответ</a>
 - 🔖 Как работает UIGestureRecognizer? <a href="https://github.com/MrCronkite/basicSwift/blob/main/Questions/Questions/11.swift">Ответ</a>
-- 🔖 Что такое typealias в Swift? <a href="https://github.com/MrCronkite/basicSwift/blob/main/Questions/Questions/12.swift">Ответ</a>
-- 🔖 Что такое Autolayout <a href="https://github.com/MrCronkite/basicSwift/blob/main/Questions/Questions/13.swift">Ответ</a>
+-  <a href="https://github.com/MrCronkite/basicSwift/blob/main/Questions/Questions/12.swift">Ответ</a>
+- 🔖 <a href="https://github.com/MrCronkite/basicSwift/blob/main/Questions/Questions/13.swift">Ответ</a>
+
+- ### 🔖 Что такое typealias в Swift?
+      <details> <summary>  Ответ </summary>
+       typealias является псевдонимом для существующего типа данных. Рассмотрим пример
+
+    ```Swift
+      typealias Dollar = Double
+
+      let totalCosts: Dollar = 12.2
+    ```
+
+- ### 🗞️ Что такое Autolayout? 
+     <details> <summary>  Ответ </summary>
+
+      Autolayout помогает создавать динамические пользовательские интерфейсы, масштабируемые
+      и адаптированные к каждому размеру и ориентации устройств. Autolayout вычисляет размер
+      и положение view в иерархии view на основе ограничений (constraints).
+
+  <p>Дополнительное чтение: <a href="https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/AutolayoutPG/index.html">Understanding Auto Layout</a></p>
 
 - ### 🗞️ Что такое Generics?
      <details> <summary>  Ответ </summary>
