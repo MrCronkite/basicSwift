@@ -14,7 +14,8 @@ let backgroundQueue = DispatchQueue.global(qos: .background)
 let defаultQueue = DispatchQueue.global()
 
 
-func task(_ symbol: String) { for i in 1...6 {
+func task(_ symbol: String) {
+    for i in 1...6 {
     print("\(symbol) \(i) prioritet = \(qos_class_self().rawValue)")
     }
 }
@@ -55,6 +56,8 @@ sleep (1)
 
 let sirealQueue1 = DispatchQueue(label: "queue1", qos: .background)
 let sirealQueue2 = DispatchQueue(label: "queue2", qos: .userInitiated)
+
+if sirealQueue1.label == "queue1" { print(true) }
 
 sirealQueue2.async {
     task("🐡")
