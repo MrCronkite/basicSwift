@@ -27,3 +27,6 @@ print(summNummbers())
 var arrey = numbers.filter { $0 > 4 }.sorted { $0 > $1 }
 print(arrey)
 
+arrey.sort { $0 < $1 }
+print(arrey)
+
