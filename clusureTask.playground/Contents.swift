@@ -16,4 +16,10 @@ func sumNumbers(arrey: [Int]) -> Int {
 
 sumNumbers(arrey: numbers)
 
-print(newArrey)
+func summNummbers() -> Int {
+    var number = 0
+    (1...999).map { if $0 % 3 == 0 && $0 % 5 == 0 { number += $0 } }
+    return number
+}
+
+print(summNummbers())
