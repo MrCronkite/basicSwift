@@ -1,4 +1,4 @@
-let numbers: [Int] = [1, 2, 5, 6, 8]
+let numbers: [Int] = [1, 2, 5, 6, 8, 23, 21, 12, 43, 12, 12, 98, 45]
 
 let string: String = "Hello world"
 
@@ -29,10 +29,19 @@ func summNummbers() -> Int {
 let reversString = reversArrey(arr: Array(arrayLiteral: string))
 print(summNummbers())
 
-//MARK: filter 
+//MARK: filter
 var arrey = numbers.filter { $0 > 4 }.sorted { $0 > $1 }
 print(arrey)
 
-arrey.sort { $0 < $1 }
-print(arrey)
+arrey.sort(by: < )
+
+var equelArrey: [Int] = []
+
+arrey.forEach {
+    if equelArrey.firstIndex(of: $0) == nil {
+        equelArrey.append($0)
+    }
+}
+
+print(equelArrey)
 
