@@ -1,7 +1,11 @@
 let numbers: [Int] = [1, 2, 5, 6, 8]
 
-func reversArrey(arr: [Int]) -> [Int] {
-    var squareNumbers: [Int] = []
+let string: String = "Hello world"
+
+
+//MARK: map
+func reversArrey(arr: [Any]) -> [Any] {
+    var squareNumbers: [Any] = []
     arr.map { squareNumbers.insert($0, at: 0) }
     return squareNumbers
 }
@@ -22,8 +26,10 @@ func summNummbers() -> Int {
     return number
 }
 
+let reversString = reversArrey(arr: Array(arrayLiteral: string))
 print(summNummbers())
 
+//MARK: filter 
 var arrey = numbers.filter { $0 > 4 }.sorted { $0 > $1 }
 print(arrey)
 
