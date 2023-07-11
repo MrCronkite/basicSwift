@@ -53,3 +53,8 @@ arrey.forEach {
 
 print(equelArrey)
 
+let names = ["Vlad", "Dima", "Katia"]
+
+var bingo = names.reduce(0) { $0 + $1.count }
+print(bingo)
+
