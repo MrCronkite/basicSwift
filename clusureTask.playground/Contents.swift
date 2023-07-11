@@ -58,3 +58,8 @@ let names = ["Vlad", "Dima", "Katia"]
 var bingo = names.reduce(0) { $0 + $1.count }
 print(bingo)
 
+let possibleNumbers = ["1", "2", "three", "///4///", "5"]
+var numbersSome = possibleNumbers.compactMap { Int($0) }
+
+print(numbersSome)
+
