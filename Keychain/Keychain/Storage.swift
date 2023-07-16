@@ -9,7 +9,7 @@ import Security
 import Foundation
 
 protocol Keychain {
-    func save(key: KeychainImpl.Keys, data: Data) throws
+    func save(key: KeychainImpl.Keys, data: String) throws
     func load(key: KeychainImpl.Keys) throws -> Data?
     func delete(key: KeychainImpl.Keys) throws
 }
@@ -20,16 +20,18 @@ final class KeychainImpl: Keychain {
     }
     
     private enum KeychainError: Error {
-            case saveFailed
-            case loadFailed
-            case deleteFailed
+        case saveFailed
+        case loadFailed
+        case deleteFailed
     }
     
-    func save(key: Keys, data: Data) throws {
+    func save(key: Keys, data: String) throws {
+        let dataString = data.data(using: .utf8)!
+        
         let query = [
             kSecClass: kSecClassGenericPassword,
-            kSecAttrAccount: key,
-            kSecValueData: data
+            kSecAttrAccount: key.rawValue,
+            kSecValueData: dataString
         ] as [String: Any]
         
         let status = SecItemAdd(query as CFDictionary, nil)
@@ -41,7 +43,7 @@ final class KeychainImpl: Keychain {
     func load(key: Keys) throws -> Data? {
         let query = [
             kSecClass: kSecClassGenericPassword,
-            kSecAttrAccount: key,
+            kSecAttrAccount: key.rawValue,
             kSecReturnData: kCFBooleanTrue!,
             kSecMatchLimit: kSecMatchLimitOne
         ] as [String: Any]
@@ -58,8 +60,14 @@ final class KeychainImpl: Keychain {
     }
     
     func delete(key: Keys) throws {
-        <#code#>
+        let query = [
+            kSecClass: kSecClassGenericPassword,
+            kSecAttrAccount: key.rawValue
+        ] as [String: Any]
+        
+        let status = SecItemDelete(query as CFDictionary)
+        if status != errSecSuccess {
+            throw KeychainError.deleteFailed
+        }
     }
-    
-    
 }
