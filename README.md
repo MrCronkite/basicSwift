@@ -224,7 +224,7 @@
       и адаптированные к каждому размеру и ориентации устройств. Autolayout вычисляет размер
       и положение view в иерархии view на основе ограничений (constraints).
 
-  <p>Дополнительное чтение: <a href="https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/AutolayoutPG/index.html">Understanding Auto Layout</a></p>
+  <p>Дополнительное чтение: <a href="https://habr.com/ru/articles/690940/">Understanding Auto Layout</a></p>
 
 - ### 🗞️ Что такое Generics?
      <details> <summary>  Ответ </summary>
