@@ -190,7 +190,6 @@
     <p>Дополнительное чтение: <a href="https://medium.com/yandex-maps-mobile/%D0%B4%D0%B5%D1%80%D0%B6%D0%B8%D0%BC-%D1%83%D0%B4%D0%B0%D1%80-%D1%81-hittest-542653d51a8c">Держим удар с hitTest</a>,
      <a href="https://habr.com/ru/post/584100/">Обработка жестов в iOS</a></p>
 
-
 - ### 🔖 Как работает UIGestureRecognizer?
      <details> <summary>  Ответ </summary>
      
@@ -402,6 +401,7 @@
        На этом этапе важно понимать, чем отличается синхронная очередь от асинхронной и чем эти два 
        инструмента отличаются.
    <p> Об этом написано в статье: <a href="https://ios-interview.ru/nsoperation-vs-grand-central-dispatch/">NSOperation или GCD</a></p>
+   <p> Дополнительно: <a href="https://codeswift.ru/complete-guide-to-concurrency-and-multithreading-in-ios/">Многопоточность</a></p>
    <p> Расскажите об инструментах: <a href="https://habr.com/ru/articles/572316/">Thread</a>, 
         <a href="https://habr.com/ru/articles/335756/">Operation</a>,
           <a href="https://mycodetips.com/ios/how-to-use-nslock-in-ios-2519.html">NSLock</a>,
