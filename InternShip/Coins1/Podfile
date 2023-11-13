@@ -1,0 +1,15 @@
+platform :ios, '14.6'
+target 'CoinRecognizer' do
+  use_frameworks!
+
+  pod 'lottie-ios' 
+  pod 'Google-Mobile-Ads-SDK'
+  pod 'AppsFlyerFramework' 
+  pod 'SwiftGen', '~> 6.0'
+  pod 'YandexMobileMetrica'
+  pod 'FBAudienceNetwork'
+  pod 'Moya', '~> 15.0'
+  pod 'UserAcquisition', :git => "https://github.com/inapps-io/UserAcquisition.git"
+  pod 'KeychainSwift'
+  
+end

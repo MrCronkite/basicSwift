@@ -1,0 +1,177 @@
+
+"start_title" = "Coin Identifier";
+"ob_button" = "Continue";
+"ob_price" = "1 dollar, USA";
+"ob_reference" = "Reference price";
+"ob_prices" = "$17.72 - $135.43";
+"ob_mind" = "Years of minting";
+"ob_denomin" = "Denomination";
+"ob_wallet" = "Your Wallet";
+"price_1202" = "$1202";
+"ob_title1" = "Recognize coins";
+"ob_title2" = "Build collections";
+"ob_title3" = "Use Ai assistant";
+"ob_title4" = "Upgrade to Premium!";
+"ob_home" = "Home";
+"ob_collection" = "Collection";
+"ob_premium" = "Upgrade to Premium!";
+"auto_renewable" = "Auto-renewable. Cancel anythime.";
+"ob_week" = "/week";
+"ob_free" = "+ 3 days free trial";
+"ob_no_ads" = "No ads";
+"ob_no_recognition" = "Unlimited recognitions";
+"ob_no_collection" = "Unlimited collections";
+"ob_no_ai_helper" = "Ai Helper 24/7";
+
+//home
+"home_info_usef" = "Useful Information";
+"home_get" = "Get Premium";
+"home_sub" = "Find coins, recognize them and watch your wallet replenish";
+"hom_catalog" = "Catalog";
+"ai_helper" = "Ai Helper";
+"start_recogn" = "Start recognition";
+"search" = "Search";
+"gold" = "Gold";
+"silver" = "Silver";
+"platinum" = "Platinum";
+"copper" = "Copper";
+"aluminum" = "Aluminum";
+"zinc" = "Zinc";
+"nickel" = "Nickel";
+"palladium" = "Palladium";
+"home_up_to" = "Up to";
+"no_results" = "No matching results";
+"home_all_coins" = "All coins";
+"home_done" = "Done";
+"home_filter" = "Filter";
+"home_cost" = "Cost";
+"filt_data" = "Date of issue";
+"filt_mater" = "Material";
+"filt_low_to" = "Low to high";
+"high_to_low" = "High to low";
+"resset_all" = "Reset All";
+"save_btn" = "Save";
+"stg_support" = "Support";
+"stg_feedback" = "Feedback";
+"stg_security" = "Security";
+
+//card
+"card_see_all" = "See all";
+"add_to_collect" = "Add to collection";
+"yeard_of_minting" = "Years of minting:";
+"card_mintage" = "Mintage:";
+"card_designer" = "Designer:";
+"card_composition" = "Composition:";
+"card_referece" = "Reference price";
+"card_denomin" = "Denomination";
+"card_melt" = "Melt price";
+"card_physic" = "Physical properties";
+"card_weight" = "Weight:";
+"card_diameter" = "Diameter:";
+"card_subtitle" = "The actual value of the coin may differ depending on its condition, luster, rarity and other factors. This is a rough estimation.";
+"card_thick" = "Thickness:";
+"card_edge" = "Edge:";
+"card_obverse" = "Obverse:";
+"card_reverse" = "Reverse:";
+"card_my_coins" = "My coins";
+"card_lettering" = "Lettering";
+
+//camera
+"cam_step1" = "Step 1";
+"cam_step1_sub" = "Focus on the obverse of the coin";
+"cam_step2" = "Step 2";
+"cam_step2_sub" = "Flip the coin over and focus on the reverse";
+"allow_allert" = "Allow acces to the camera";
+"cancel_alert" = "Cancel";
+"settings_alert" = "Settings";
+"button_settings" = "Open Settings";
+"subtitle_acces" = "To start identifying coins, go to settings and give the app access to the camera.";
+"title_acces" = "No acces to camera!";
+"obverse" = "Obverse";
+"reverse" = "Reverse";
+"no_mathc_coin" = "Your coin was not found";
+"no_mathc_coin_subtitle" = "Unfortunately, we were unable to recognize your coin. Please make sure you have followed all recommendations and try again.";
+"retake_button" = "Retake photo";
+"select_collect" = "Select collection";
+"mathc_found" = "Match is found";
+"subtitle_match" = "To see the results watch an ad or upgrade to a premium subscription and unlock unlimited access to the app's features";
+"match_title" = "See the results and find out the value of the coin";
+"result_button" = "See result";
+"wathc_ad" = "Watch the ad";
+"recognition_set" = "sec";
+"recogn_proc" = "Recognition process";
+"six_sec" = "6 sec";
+"add_collect_fold" = "Add Collection";
+"coins_folder" = "coins";
+"collection_folder" = "collection";
+"get_fold" = "Get";
+"prem_folder" = "Premium";
+"spesial_price" = "with special price";
+
+//settings
+"contact_us" = "Contact us";
+"restore" = "Restore";
+"rate_app" = "Rate app";
+"share_the_app" = "Share the app";
+"privacy" = "Privacy Policy";
+"term_of_use" = "Term of Use";
+
+//colletion
+"history_title" = "Your history is empty";
+"history_subtitle" = "Take advantage of the recognition feature to add to your history";
+"fav_title" = "Your favorites is empty";
+"fav_subtitle" = "To add a coin to the favorites click on the heart icon in the coin card.";
+"btn_collection" = "Collection";
+"btn_history" = "History";
+"btn_favorites" = "Favorites";
+"add_coins_to" = "Add a coin to collection!";
+"open_all_access" = "Open all access";
+"open_subtitle" = "To add a coin to your collection, watch an ad or upgrade to a premium subscription and unlock unlimited access to the app's features";
+"add_coins_btn" = "Add to collection";
+"$_collection" = "$$$ / collection";
+"add_new_coins" = "Add new coin to collection";
+
+//chat
+"start_message" = "Hello, my friend. I am your guide to the world of coins, ancient and rare, modern and exclusive. Ask your question and I will help you with the answer. Or use the prompts below to start a dialog.";
+
+"helper_1" = "Where is the largest collection of coins?";
+"helper_2" = "Which coin is the most expensive?";
+"helper_3" = "Where to buy rare coins?";
+"helper_4" = "What coins are popular among collectors?";
+"title_chat" = "Ai Helper";
+"get_premium" = "Get Premium";
+"subtitle_chat" = "You have 3 free message left.";
+"chat_message" = "Message";
+
+//premium
+"premium_button" = "Take the offer now";
+"prem_then" = "then";
+"first_week" = "/ first week";
+"prem_special" = "Special Price";
+
+//alert
+"purchase_restore" = "Purchase restored";
+"nothing_restore" = "Nothing to restor";
+"support_coin" = "Coin detector - support";
+"support_hi" = "Hi";
+"alert_no_internet" = "No internet connection";
+"alert_delet" = "Delete an element?";
+"alert_delete_item" = "Are you sure you want to delete the item?";
+"alert_delete" = "Delete";
+"alert_rename" = "Rename";
+"alert_from_catalog" = "From catalog";
+"alert_recong" = "By recognizing";
+"alert_delete_collecti" = "Delete collection";
+
+"rename_create" = "Name";
+"rename_collection_name" = "Collection Name";
+"folder_empty" = "You don't have any coins in this collection";
+"folder_empty_sub" = "Add coins to this collection by clicking the 'Add new coin to collection' button";
+"folder_congrat" = "Congratulations!";
+"folder_congrat_sub" = "Your coin has been added to the collection!";
+
+
+
+
+
+

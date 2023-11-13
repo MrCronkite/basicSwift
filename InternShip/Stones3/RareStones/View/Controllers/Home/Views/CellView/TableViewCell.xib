@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TableViewCell" customModule="Gem_Identifier" customModuleProvider="target">
+            <connections>
+                <outlet property="bgView" destination="v4b-GA-hQP" id="Cik-eu-VSu"/>
+                <outlet property="imageBG" destination="2Lt-JE-k5K" id="3vT-wm-noE"/>
+                <outlet property="imageViewBase" destination="anb-jh-7H2" id="VgD-Zi-kYa"/>
+                <outlet property="titleText" destination="L63-Py-uvn" id="2oP-yA-203"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v4b-GA-hQP">
+                    <rect key="frame" x="0.0" y="109" width="393" height="91"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="91" id="kwp-oa-Ozs"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Lt-JE-k5K">
+                    <rect key="frame" x="16" y="84" width="100" height="100"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="anb-jh-7H2">
+                            <rect key="frame" x="6" y="6" width="88" height="88"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemGreenColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="0yW-AM-KHq"/>
+                        <constraint firstAttribute="bottom" secondItem="anb-jh-7H2" secondAttribute="bottom" constant="6" id="4Jm-gI-vyc"/>
+                        <constraint firstAttribute="trailing" secondItem="anb-jh-7H2" secondAttribute="trailing" constant="6" id="Biq-OA-6Vu"/>
+                        <constraint firstItem="anb-jh-7H2" firstAttribute="leading" secondItem="2Lt-JE-k5K" secondAttribute="leading" constant="6" id="ReW-aO-O7S"/>
+                        <constraint firstItem="anb-jh-7H2" firstAttribute="top" secondItem="2Lt-JE-k5K" secondAttribute="top" constant="6" id="a0A-Ni-L25"/>
+                        <constraint firstAttribute="width" constant="100" id="x8E-f9-Kgi"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The most unusual stones in the whole world" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L63-Py-uvn">
+                    <rect key="frame" x="132" y="133" width="245" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Eaq-mv-Iad"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <constraints>
+                <constraint firstItem="L63-Py-uvn" firstAttribute="leading" secondItem="2Lt-JE-k5K" secondAttribute="trailing" constant="16" id="1Yb-x9-qM6"/>
+                <constraint firstItem="v4b-GA-hQP" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="8cv-Di-owJ"/>
+                <constraint firstAttribute="bottom" secondItem="2Lt-JE-k5K" secondAttribute="bottom" constant="16" id="C4o-c3-v1g"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="L63-Py-uvn" secondAttribute="trailing" constant="16" id="HUP-wo-eG0"/>
+                <constraint firstAttribute="bottom" secondItem="L63-Py-uvn" secondAttribute="bottom" constant="27" id="huo-79-9Yf"/>
+                <constraint firstItem="2Lt-JE-k5K" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="jLU-Y9-EzR"/>
+                <constraint firstAttribute="bottom" secondItem="v4b-GA-hQP" secondAttribute="bottom" id="jY7-SD-6GP"/>
+                <constraint firstItem="v4b-GA-hQP" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="ppA-Lb-p2b"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="64.885496183206101" y="-11.267605633802818"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

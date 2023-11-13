@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HealingViewController" customModule="Gem_Identifier" customModuleProvider="target">
+            <connections>
+                <outlet property="backButton" destination="KwI-34-6ka" id="R2n-W1-6bo"/>
+                <outlet property="buttonContainer" destination="0NH-7J-Bx9" id="ZZc-ae-iiS"/>
+                <outlet property="collectionViewHealing" destination="3YS-DY-yG2" id="jmW-Rv-Yzp"/>
+                <outlet property="titleHealing" destination="xqB-xI-z43" id="CFg-qM-SfS"/>
+                <outlet property="view" destination="iN0-l3-epB" id="ZAm-wj-3AR"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KwI-34-6ka">
+                    <rect key="frame" x="16" y="63" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="35x-rL-s0J"/>
+                        <constraint firstAttribute="width" constant="36" id="nxZ-hg-cTj"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="backImg"/>
+                    <connections>
+                        <action selector="goToBack:" destination="-1" eventType="touchUpInside" id="yls-um-oi4"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Healing stones" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xqB-xI-z43">
+                    <rect key="frame" x="134.66666666666666" y="71" width="123.99999999999997" height="22"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
+                    <color key="textColor" red="0.29429510240000001" green="0.27762299779999999" blue="0.3176518679" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="3YS-DY-yG2">
+                    <rect key="frame" x="16" y="113" width="361" height="739"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="o3z-ru-cHq">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0NH-7J-Bx9">
+                    <rect key="frame" x="41" y="748" width="311" height="54"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="54" id="4hT-Xw-dzt"/>
+                        <constraint firstAttribute="width" constant="311" id="P4z-17-HbX"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="3YS-DY-yG2" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="82p-Eh-BEt"/>
+                <constraint firstItem="KwI-34-6ka" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="4" id="Gc6-FW-Q7y"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="0NH-7J-Bx9" secondAttribute="bottom" constant="16" id="J2G-g6-Cbc"/>
+                <constraint firstItem="3YS-DY-yG2" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="URU-dJ-gSb"/>
+                <constraint firstItem="xqB-xI-z43" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Ut4-LJ-3sH"/>
+                <constraint firstItem="KwI-34-6ka" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="XfA-O1-xXg"/>
+                <constraint firstItem="0NH-7J-Bx9" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Z1S-Cp-nVN"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="3YS-DY-yG2" secondAttribute="trailing" constant="16" id="kap-TO-riU"/>
+                <constraint firstAttribute="bottom" secondItem="3YS-DY-yG2" secondAttribute="bottom" id="uIE-LH-LHp"/>
+                <constraint firstItem="3YS-DY-yG2" firstAttribute="top" secondItem="xqB-xI-z43" secondAttribute="bottom" constant="20" id="vcU-p9-Kj9"/>
+                <constraint firstItem="xqB-xI-z43" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="12" id="xpA-C0-Sn5"/>
+            </constraints>
+            <point key="canvasLocation" x="110.68702290076335" y="-11.267605633802818"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="backImg" width="36" height="36"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

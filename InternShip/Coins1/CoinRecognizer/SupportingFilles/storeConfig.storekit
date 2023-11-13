@@ -1,0 +1,91 @@
+{
+  "identifier" : "78D81A0C",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+
+  ],
+  "settings" : {
+
+  },
+  "subscriptionGroups" : [
+    {
+      "id" : "F70F08D3",
+      "localizations" : [
+
+      ],
+      "name" : "subScribe",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "0.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "299FA8E9",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "",
+              "displayName" : "",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "aicoins.com.1w",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "aicoins.com.1w",
+          "subscriptionGroupID" : "F70F08D3",
+          "type" : "RecurringSubscription"
+        }
+      ]
+    },
+    {
+      "id" : "595A8D30",
+      "localizations" : [
+
+      ],
+      "name" : "ficwe",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "0.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "A273ED0C",
+          "introductoryOffer" : {
+            "displayPrice" : "9.99",
+            "internalID" : "968AC037",
+            "paymentMode" : "payUpFront",
+            "subscriptionPeriod" : "P1M"
+          },
+          "localizations" : [
+            {
+              "description" : "",
+              "displayName" : "",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "aicoins.com.1w.intro",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "aicoins.com.1w.intro",
+          "subscriptionGroupID" : "595A8D30",
+          "type" : "RecurringSubscription"
+        }
+      ]
+    }
+  ],
+  "version" : {
+    "major" : 2,
+    "minor" : 0
+  }
+}

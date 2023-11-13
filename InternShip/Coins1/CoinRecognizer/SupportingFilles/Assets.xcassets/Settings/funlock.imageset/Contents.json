@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "funlock.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MaterialViewCell" customModule="CoinRecognizer" customModuleProvider="target">
+            <connections>
+                <outlet property="imageViewCheck" destination="vRG-A7-J6R" id="AYH-bw-3g9"/>
+                <outlet property="titleNameMaterial" destination="RQW-L4-pHn" id="JxH-dD-lri"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="24"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ellipse" translatesAutoresizingMaskIntoConstraints="NO" id="vRG-A7-J6R">
+                    <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="24" id="ZQR-EQ-B6E"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lable" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RQW-L4-pHn">
+                    <rect key="frame" x="37" y="0.0" width="63" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vRG-A7-J6R" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="486-3k-pDb"/>
+                <constraint firstItem="vRG-A7-J6R" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="4Ix-xe-tUG"/>
+                <constraint firstItem="RQW-L4-pHn" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="7sY-8u-P8e"/>
+                <constraint firstItem="RQW-L4-pHn" firstAttribute="leading" secondItem="vRG-A7-J6R" secondAttribute="trailing" constant="13" id="Ad8-TY-sSe"/>
+                <constraint firstAttribute="bottom" secondItem="RQW-L4-pHn" secondAttribute="bottom" id="It4-12-Vwv"/>
+                <constraint firstAttribute="bottom" secondItem="vRG-A7-J6R" secondAttribute="bottom" id="Pfw-Wi-PZD"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="RQW-L4-pHn" secondAttribute="trailing" id="q0I-Sc-8U8"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="131.29770992366412" y="-11.267605633802818"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ellipse" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

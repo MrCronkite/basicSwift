@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StartViewController" customModule="RareStones" customModuleProvider="target">
+            <connections>
+                <outlet property="imageAnimated" destination="2N8-lb-VbQ" id="KJv-nC-hUH"/>
+                <outlet property="imageBG" destination="4Il-Xd-2ig" id="2Ta-Ia-iXb"/>
+                <outlet property="lableText" destination="jsw-4c-a4i" id="xfF-DQ-8he"/>
+                <outlet property="view" destination="iN0-l3-epB" id="2pK-kn-VdP"/>
+                <outlet property="viewAnimated" destination="USS-Fr-ZBL" id="YnV-DR-oro"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgImgStart" translatesAutoresizingMaskIntoConstraints="NO" id="4Il-Xd-2ig">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jsw-4c-a4i">
+                    <rect key="frame" x="46.666666666666657" y="686" width="300" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="QKC-bd-toc"/>
+                        <constraint firstAttribute="width" constant="300" id="pMW-O3-CO8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                    <color key="textColor" red="0.94544941189999998" green="0.95616215469999999" blue="0.99216181039999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ston1" translatesAutoresizingMaskIntoConstraints="NO" id="2N8-lb-VbQ">
+                    <rect key="frame" x="138.66666666666666" y="383.66666666666669" width="116" height="85"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="116" id="Fkv-td-aie"/>
+                        <constraint firstAttribute="height" constant="85" id="qMU-mw-vln"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="USS-Fr-ZBL">
+                    <rect key="frame" x="96.666666666666686" y="326" width="200" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="2PM-Ny-MUf"/>
+                        <constraint firstAttribute="height" constant="200" id="5JZ-tq-Cra"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="2N8-lb-VbQ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="AFn-pl-jg8"/>
+                <constraint firstItem="4Il-Xd-2ig" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="WvJ-kU-vok"/>
+                <constraint firstItem="4Il-Xd-2ig" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="d3s-WP-0fa"/>
+                <constraint firstItem="jsw-4c-a4i" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="exF-Um-r9L"/>
+                <constraint firstAttribute="bottom" secondItem="4Il-Xd-2ig" secondAttribute="bottom" id="l9M-Y7-TOm"/>
+                <constraint firstItem="4Il-Xd-2ig" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="lDc-3s-K2f"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="jsw-4c-a4i" secondAttribute="bottom" constant="52" id="oa2-Rw-JMV"/>
+                <constraint firstItem="2N8-lb-VbQ" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="r8a-N9-67J"/>
+                <constraint firstItem="USS-Fr-ZBL" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="u96-m5-4UP"/>
+                <constraint firstItem="USS-Fr-ZBL" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="uNJ-XJ-Fmj"/>
+            </constraints>
+            <point key="canvasLocation" x="130.53435114503816" y="-11.267605633802818"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bgImgStart" width="375" height="812"/>
+        <image name="ston1" width="73" height="100"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

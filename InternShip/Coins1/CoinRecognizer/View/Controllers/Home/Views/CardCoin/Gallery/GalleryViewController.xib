@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GalleryViewController" customModule="CoinRecognizer" customModuleProvider="target">
+            <connections>
+                <outlet property="closeButton" destination="59l-uU-4Na" id="7Ey-lH-WrL"/>
+                <outlet property="collectionViewCoins" destination="Xuy-kT-Xpk" id="t2d-Bu-fne"/>
+                <outlet property="scroolView" destination="SUq-8m-8pi" id="vwU-lU-YbN"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Rtc-GB-fb8"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SUq-8m-8pi">
+                    <rect key="frame" x="0.0" y="80" width="375" height="447"/>
+                </scrollView>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" bouncesZoom="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Xuy-kT-Xpk">
+                    <rect key="frame" x="0.0" y="547" width="375" height="75"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="75" id="7hm-hR-U88"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Wk3-xA-Tru">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="59l-uU-4Na">
+                    <rect key="frame" x="16" y="26" width="32" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="8JZ-TJ-rUq"/>
+                        <constraint firstAttribute="width" constant="32" id="U0e-0N-30C"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                    <connections>
+                        <action selector="close" destination="-1" eventType="touchUpInside" id="6zR-GD-FsH"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="59l-uU-4Na" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="6" id="GD2-BY-4ec"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="SUq-8m-8pi" secondAttribute="bottom" constant="140" id="IyS-mZ-Qd7"/>
+                <constraint firstItem="Xuy-kT-Xpk" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="L3J-kZ-P9Q"/>
+                <constraint firstItem="SUq-8m-8pi" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="bPK-op-6nu"/>
+                <constraint firstItem="SUq-8m-8pi" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="dNP-bf-TrG"/>
+                <constraint firstItem="SUq-8m-8pi" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="60" id="kiZ-RX-s3r"/>
+                <constraint firstItem="59l-uU-4Na" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="tOC-2l-wyI"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Xuy-kT-Xpk" secondAttribute="trailing" id="tQ9-AR-ZS1"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Xuy-kT-Xpk" secondAttribute="bottom" constant="45" id="zqV-6a-95e"/>
+            </constraints>
+            <point key="canvasLocation" x="120.8" y="-12.143928035982009"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

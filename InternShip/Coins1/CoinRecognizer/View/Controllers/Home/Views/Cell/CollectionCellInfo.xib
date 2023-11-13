@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CollectionCellInfo" customModule="CoinRecognizer" customModuleProvider="target">
+            <connections>
+                <outlet property="blurView" destination="p44-ff-RPq" id="Ac2-pW-i8o"/>
+                <outlet property="mainImageView" destination="Mcf-BB-PDb" id="mU6-Sp-tWB"/>
+                <outlet property="titleText" destination="oSU-am-IYT" id="MEN-YZ-8m9"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="167" height="109"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Mcf-BB-PDb">
+                    <rect key="frame" x="0.0" y="0.0" width="167" height="109"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p44-ff-RPq">
+                    <rect key="frame" x="0.0" y="57.666666666666657" width="167" height="51.333333333333343"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oSU-am-IYT">
+                            <rect key="frame" x="12" y="20.000000000000007" width="143" height="19.333333333333336"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="oSU-am-IYT" secondAttribute="bottom" constant="12" id="X8H-hb-14C"/>
+                        <constraint firstItem="oSU-am-IYT" firstAttribute="top" secondItem="p44-ff-RPq" secondAttribute="top" constant="20" id="YuQ-yA-4Jb"/>
+                        <constraint firstItem="oSU-am-IYT" firstAttribute="leading" secondItem="p44-ff-RPq" secondAttribute="leading" constant="12" id="iSW-4y-buW"/>
+                        <constraint firstAttribute="trailing" secondItem="oSU-am-IYT" secondAttribute="trailing" constant="12" id="m1f-ff-5e2"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="p44-ff-RPq" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="43T-lN-BPW"/>
+                <constraint firstItem="Mcf-BB-PDb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="GQl-fe-DEy"/>
+                <constraint firstItem="p44-ff-RPq" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Mtt-aI-6aY"/>
+                <constraint firstItem="Mcf-BB-PDb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="XMz-KJ-Ruw"/>
+                <constraint firstAttribute="bottom" secondItem="Mcf-BB-PDb" secondAttribute="bottom" id="elU-sc-qdK"/>
+                <constraint firstAttribute="trailing" secondItem="Mcf-BB-PDb" secondAttribute="trailing" id="orF-Gs-9QR"/>
+                <constraint firstAttribute="bottom" secondItem="p44-ff-RPq" secondAttribute="bottom" id="paI-VI-fZG"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="130.53435114503816" y="-12.323943661971832"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

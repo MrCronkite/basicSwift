@@ -1,0 +1,131 @@
+PODS:
+  - Alamofire (5.8.0)
+  - AppsFlyerFramework (6.12.2):
+    - AppsFlyerFramework/Main (= 6.12.2)
+  - AppsFlyerFramework/Main (6.12.2)
+  - FBAudienceNetwork (6.14.0)
+  - Google-Mobile-Ads-SDK (10.10.0):
+    - GoogleAppMeasurement (< 11.0, >= 7.0)
+    - GoogleUserMessagingPlatform (>= 1.1)
+  - GoogleAppMeasurement (10.14.0):
+    - GoogleAppMeasurement/AdIdSupport (= 10.14.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.11)
+    - GoogleUtilities/MethodSwizzler (~> 7.11)
+    - GoogleUtilities/Network (~> 7.11)
+    - "GoogleUtilities/NSData+zlib (~> 7.11)"
+    - nanopb (< 2.30910.0, >= 2.30908.0)
+  - GoogleAppMeasurement/AdIdSupport (10.14.0):
+    - GoogleAppMeasurement/WithoutAdIdSupport (= 10.14.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.11)
+    - GoogleUtilities/MethodSwizzler (~> 7.11)
+    - GoogleUtilities/Network (~> 7.11)
+    - "GoogleUtilities/NSData+zlib (~> 7.11)"
+    - nanopb (< 2.30910.0, >= 2.30908.0)
+  - GoogleAppMeasurement/WithoutAdIdSupport (10.14.0):
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.11)
+    - GoogleUtilities/MethodSwizzler (~> 7.11)
+    - GoogleUtilities/Network (~> 7.11)
+    - "GoogleUtilities/NSData+zlib (~> 7.11)"
+    - nanopb (< 2.30910.0, >= 2.30908.0)
+  - GoogleUserMessagingPlatform (2.1.0)
+  - GoogleUtilities/AppDelegateSwizzler (7.11.5):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (7.11.5):
+    - PromisesObjC (< 3.0, >= 1.2)
+  - GoogleUtilities/Logger (7.11.5):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/MethodSwizzler (7.11.5):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/Network (7.11.5):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (7.11.5)"
+  - GoogleUtilities/Reachability (7.11.5):
+    - GoogleUtilities/Logger
+  - KeychainSwift (20.0.0)
+  - lottie-ios (4.2.0)
+  - Moya (15.0.0):
+    - Moya/Core (= 15.0.0)
+  - Moya/Core (15.0.0):
+    - Alamofire (~> 5.0)
+  - nanopb (2.30909.0):
+    - nanopb/decode (= 2.30909.0)
+    - nanopb/encode (= 2.30909.0)
+  - nanopb/decode (2.30909.0)
+  - nanopb/encode (2.30909.0)
+  - PromisesObjC (2.3.1)
+  - SwiftGen (6.6.2)
+  - SwiftyStoreKit (0.16.1)
+  - UserAcquisition (1.3.0):
+    - SwiftyStoreKit
+  - YandexMobileMetrica (4.5.2):
+    - YandexMobileMetrica/Static (= 4.5.2)
+  - YandexMobileMetrica/Static (4.5.2):
+    - YandexMobileMetrica/Static/Core (= 4.5.2)
+    - YandexMobileMetrica/Static/Crashes (= 4.5.2)
+  - YandexMobileMetrica/Static/Core (4.5.2)
+  - YandexMobileMetrica/Static/Crashes (4.5.2):
+    - YandexMobileMetrica/Static/Core
+
+DEPENDENCIES:
+  - AppsFlyerFramework
+  - FBAudienceNetwork
+  - Google-Mobile-Ads-SDK
+  - KeychainSwift
+  - lottie-ios
+  - Moya (~> 15.0)
+  - SwiftGen (~> 6.0)
+  - UserAcquisition (from `https://github.com/inapps-io/UserAcquisition.git`)
+  - YandexMobileMetrica
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AppsFlyerFramework
+    - FBAudienceNetwork
+    - Google-Mobile-Ads-SDK
+    - GoogleAppMeasurement
+    - GoogleUserMessagingPlatform
+    - GoogleUtilities
+    - KeychainSwift
+    - lottie-ios
+    - Moya
+    - nanopb
+    - PromisesObjC
+    - SwiftGen
+    - SwiftyStoreKit
+    - YandexMobileMetrica
+
+EXTERNAL SOURCES:
+  UserAcquisition:
+    :git: https://github.com/inapps-io/UserAcquisition.git
+
+CHECKOUT OPTIONS:
+  UserAcquisition:
+    :commit: 7c1c46033f4ee4fcefbcf2ff04012f1adca615eb
+    :git: https://github.com/inapps-io/UserAcquisition.git
+
+SPEC CHECKSUMS:
+  Alamofire: 0e92e751b3e9e66d7982db43919d01f313b8eb91
+  AppsFlyerFramework: 6eb4d89d2eb9a6632317f1055b359d9fd85fd5ff
+  FBAudienceNetwork: 03e273f66b70756be7d060927111af97b7641b06
+  Google-Mobile-Ads-SDK: 509e53bd31c6accb2d9c33b0eb66df1d54dda622
+  GoogleAppMeasurement: 7fee012a868315d418f365fbc8d394d8e020e749
+  GoogleUserMessagingPlatform: dce302b8f1b84d6e945812ee7a15c3f65a102cbf
+  GoogleUtilities: 13e2c67ede716b8741c7989e26893d151b2b2084
+  KeychainSwift: 0ce6a4d13f7228054d1a71bb1b500448fb2ab837
+  lottie-ios: 809ecf2d460ed650a6aed7aa88b2ec45fab4779c
+  Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
+  nanopb: b552cce312b6c8484180ef47159bc0f65a1f0431
+  PromisesObjC: c50d2056b5253dadbd6c2bea79b0674bd5a52fa4
+  SwiftGen: 1366a7f71aeef49954ca5a63ba4bef6b0f24138c
+  SwiftyStoreKit: 6b9c08810269f030586dac1fae8e75871a82e84a
+  UserAcquisition: 836dc880ee677d8a7f4d24a908fa1950d836ee92
+  YandexMobileMetrica: f5368ee93f286c793d73b58da00929babfc897c1
+
+PODFILE CHECKSUM: 62543a30c3a89da5036d1c15f159c09f6eb3a098
+
+COCOAPODS: 1.12.0

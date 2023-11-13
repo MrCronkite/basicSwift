@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RareStoneViewController" customModule="Gem_Identifier" customModuleProvider="target">
+            <connections>
+                <outlet property="backButton" destination="4MI-Sk-7tw" id="c9V-cc-APJ"/>
+                <outlet property="buttonContainer" destination="jCp-j5-5nh" id="fap-52-iZf"/>
+                <outlet property="rareColletion" destination="apY-nR-Mfa" id="Z2r-ZV-MhT"/>
+                <outlet property="titleRare" destination="Iua-j4-ucI" id="USJ-2R-vFh"/>
+                <outlet property="view" destination="iN0-l3-epB" id="hgX-xP-b9v"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4MI-Sk-7tw">
+                    <rect key="frame" x="16" y="24" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="36" id="aoF-wg-38D"/>
+                        <constraint firstAttribute="height" constant="36" id="oo4-be-tWk"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="backImg"/>
+                    <connections>
+                        <action selector="goToBack:" destination="-1" eventType="touchUpInside" id="Lre-zm-sKW"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rare stones" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iua-j4-ucI">
+                    <rect key="frame" x="157.33333333333334" y="32" width="99.666666666666657" height="21.666666666666671"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
+                    <color key="textColor" red="0.29429510240000001" green="0.27762299779999999" blue="0.3176518679" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="apY-nR-Mfa">
+                    <rect key="frame" x="16" y="73.666666666666686" width="382" height="662.33333333333326"/>
+                    <color key="backgroundColor" red="1" green="0.54132862140000004" blue="0.04587943555" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Q9U-sf-IV5">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jCp-j5-5nh">
+                    <rect key="frame" x="51.666666666666657" y="666" width="311" height="54"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="311" id="pWU-5W-wBN"/>
+                        <constraint firstAttribute="height" constant="54" id="ra1-y9-U8B"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Iua-j4-ucI" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="12" id="9OX-YG-7cm"/>
+                <constraint firstAttribute="bottom" secondItem="apY-nR-Mfa" secondAttribute="bottom" id="GP1-xi-M6s"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="apY-nR-Mfa" secondAttribute="trailing" constant="16" id="Izr-LU-gqb"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="jCp-j5-5nh" secondAttribute="bottom" constant="16" id="Lal-L3-sZ1"/>
+                <constraint firstItem="apY-nR-Mfa" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="Mh7-OB-YQb"/>
+                <constraint firstItem="4MI-Sk-7tw" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="4" id="XRm-Mj-Tmf"/>
+                <constraint firstItem="apY-nR-Mfa" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="bVR-Qq-Xdf"/>
+                <constraint firstItem="apY-nR-Mfa" firstAttribute="top" secondItem="Iua-j4-ucI" secondAttribute="bottom" constant="20" id="cRP-pF-o9M"/>
+                <constraint firstItem="jCp-j5-5nh" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="dyF-c4-9Au"/>
+                <constraint firstItem="4MI-Sk-7tw" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="t0x-Ip-AIg"/>
+                <constraint firstItem="Iua-j4-ucI" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="tfQ-2z-big"/>
+            </constraints>
+            <point key="canvasLocation" x="54" y="-11"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="backImg" width="36" height="36"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,9 @@
+
+xcassets:
+    inputs:
+        - CoinRecognizer/SupportingFilles/Assets.xcassets
+        - CoinRecognizer/SupportingFilles/Color.xcassets
+    outputs:
+        templateName: swift5
+        output: CoinRecognizer/Helpers/SwiftGen/Assets.swift
+        

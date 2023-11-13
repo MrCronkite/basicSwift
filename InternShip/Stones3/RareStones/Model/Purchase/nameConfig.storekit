@@ -1,0 +1,82 @@
+{
+  "identifier" : "1DAC0F07",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+
+  ],
+  "settings" : {
+
+  },
+  "subscriptionGroups" : [
+    {
+      "id" : "1ED27286",
+      "localizations" : [
+
+      ],
+      "name" : "nameGroop",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "0.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "BBDB770C",
+          "introductoryOffer" : {
+            "displayPrice" : "0.99",
+            "internalID" : "FCF8E255",
+            "paymentMode" : "free",
+            "subscriptionPeriod" : "P3D"
+          },
+          "localizations" : [
+            {
+              "description" : "",
+              "displayName" : "",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "gemidentifier.com.1week.intro",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "Premium",
+          "subscriptionGroupID" : "1ED27286",
+          "type" : "RecurringSubscription"
+        },
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "0.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "32DEDB83",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "",
+              "displayName" : "",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "gemidentifier.com.1week",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "Subscribe",
+          "subscriptionGroupID" : "1ED27286",
+          "type" : "RecurringSubscription"
+        }
+      ]
+    }
+  ],
+  "version" : {
+    "major" : 2,
+    "minor" : 0
+  }
+}

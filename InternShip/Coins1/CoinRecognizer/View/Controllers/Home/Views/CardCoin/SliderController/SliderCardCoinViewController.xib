@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SliderCardCoinViewController" customModule="CoinRecognizer" customModuleProvider="target">
+            <connections>
+                <outlet property="closeButton" destination="bwf-Vx-4Pc" id="EUR-5T-El8"/>
+                <outlet property="pageControl" destination="2VP-ck-54M" id="iJg-EV-8pu"/>
+                <outlet property="scrollView" destination="9ed-j7-qBY" id="Drg-NY-L7D"/>
+                <outlet property="view" destination="iN0-l3-epB" id="hQZ-Sh-Vt0"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ed-j7-qBY">
+                    <rect key="frame" x="0.0" y="47" width="428" height="879"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </scrollView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bwf-Vx-4Pc">
+                    <rect key="frame" x="16" y="53" width="32" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="Fdz-XW-XJB"/>
+                        <constraint firstAttribute="width" constant="32" id="d3s-Iy-pmq"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                    <connections>
+                        <action selector="goToBack:" destination="-1" eventType="touchUpInside" id="xTt-4f-1as"/>
+                    </connections>
+                </button>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="2VP-ck-54M">
+                    <rect key="frame" x="156" y="863" width="116" height="26"/>
+                    <color key="pageIndicatorTintColor" red="0.93212419749999997" green="0.79716497659999996" blue="0.74116522070000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <color key="currentPageIndicatorTintColor" name="orange"/>
+                </pageControl>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" name="lightGray"/>
+            <constraints>
+                <constraint firstItem="bwf-Vx-4Pc" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="6" id="1Go-H9-aKI"/>
+                <constraint firstAttribute="bottom" secondItem="9ed-j7-qBY" secondAttribute="bottom" id="DE8-oJ-fb8"/>
+                <constraint firstItem="bwf-Vx-4Pc" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="DIQ-q4-UEf"/>
+                <constraint firstItem="2VP-ck-54M" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="J47-NC-xH5"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="2VP-ck-54M" secondAttribute="bottom" constant="3" id="MeT-0Z-CMg"/>
+                <constraint firstItem="9ed-j7-qBY" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="QvI-RH-GZk"/>
+                <constraint firstItem="9ed-j7-qBY" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="R2y-9O-f6o"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="9ed-j7-qBY" secondAttribute="trailing" id="cn9-cr-HEG"/>
+            </constraints>
+            <point key="canvasLocation" x="130.53435114503816" y="-11.267605633802818"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="lightGray">
+            <color red="0.96899998188018799" green="0.97200000286102295" blue="0.98000001907348633" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="orange">
+            <color red="0.87599998712539673" green="0.40299999713897705" blue="0.22699999809265137" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

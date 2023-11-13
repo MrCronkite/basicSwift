@@ -1,0 +1,143 @@
+
+
+//Onbording
+"start_lable" = "Gem Identifire";
+"onb_sub_text_first" = "Recognize stones and find out their estimated value";
+"onb_sub_text_second" = "Useful information for finding the most expensive stones";
+"onb_sub_third" = "Open up limitless possibilities";
+"onb_sub_diamond" = "Diamond";
+"onb_original" = "Original vs Fake";
+"onb_free_first" = "Unlimited recognition";
+"onb_free_second" = "Detection with no limits";
+"onb_free_third" = "Ai Helper 24/7";
+"onb_free_fourtin" = "No advertising";
+"onb_free_faive" = "Only $8,99 per wek with 3 days trial";
+"onb_free_btn" = "Continue";
+"onb_free_restore" = "Restore";
+"onb_free_term_us" = "Terms of use";
+"onb_free_private" = "Privacy policy";
+"onb_free_skip" = "Skip";
+
+//Home
+"h_search_field" = "Search by stones and minerals";
+"h_lable_premium_title" = "Unlimited access";
+"h_lable_premium_subtitle" = "Use the app's features without limits";
+"h_button_premium" = "Get Premium";
+"h_title_stone_all" = "All stones";
+"h_title_stone_healing" = "Healing stones";
+"h_title_stone_zodiac" = "Zodiac stones";
+"h_title_stone_rare" = "Rare stones";
+"h_subtitle_all" = "Stones, minerals, chrystals";
+"h_subtitle_healing" = "To suit different needs";
+"h_subtitle_zodiac" = "With division by all zodiac signs";
+"h_subtitle_rare" = "The rarest stones and minerals";
+"h_articles" = "Articles";
+"h_original_vs_fake" = "Original vs fake";
+"h_button_see" = "See all";
+"h_button_roll" = "Roll up";
+"h_up_to" = "Up to";
+"h_article_mentions" = "Mentions";
+"h_article_subtitle" = "Original vs fake";
+"h_article_orig" = "Original";
+"h_article_fake" = "Fake";
+"tab_home" = "Home";
+"tab_detection" = "Detection";
+"tab_history" = "History";
+"tab_Ai_helper" = "Ai Helper";
+"h_search_low" = "Price low";
+"h_search_high" = "Price high";
+"camera_button" = "Recognize stone";
+"h_title_healing" = "Healing stones";
+"h_title_rare" = "Rare stones";
+"h_zodiac_open_card" = "Open stone card";
+"h_dataofbirth" = "Date of birth";
+"h_zodiac_element" = "Element";
+"h_zodiac_title" = "Zodiac stones";
+
+//Detector
+"detect_sub_text" = "The detector recognizes stones with metal content. Bring the phone as close as possible to the deposit or stone.";
+"detect_first_text" = "Low probability of magnetic stones";
+"detect_second_text" = "Average probability of magnetic stones";
+"detect_therd_text" = "High probability of magnetic stones";
+"detect_btn_start" = "Start";
+"detect_alert_text" = "Bring the stone to the phone to start";
+"detect_sub_title" = "Try detection";
+"detect_sub_subtitle" = "Use the feature for viewing ads or get full access to all of the features for a subscription";
+"detect_btn_go" = "Go it!";
+
+//Camera
+"cam_sub_title" = "Match is found";
+"cam_sub_title_open" = "Open all matches";
+"cam_sub_subtitle" = "Use the feature for viewing ads or get full access to all of the features for a subscription";
+"cam_sub_btn_ad" = "Watch the ad";
+"cam_sub_btn_sub" = "Subscribe";
+"cam_settings_title" = "No access to camera!";
+"cam_settings_subtitle" = "To start identifying stones, go to settings and give the app access to the camera";
+"cam_settings_button" = "Open settings";
+"cam_keep_text" = "Keep the stone in focus";
+"cam_photo_tips" = "Photo Tips";
+"cam_pt_title" = "To improve the recognition result adhere to the following tips:";
+"cam_identification" = "Identification process";
+"cam_pt_looking_1" = "Looking for a match ";
+"cam_pt_looking_2" = "Preparing a description";
+"cam_pt_looking_3" = "Determine the cost per carat";
+"cam_pt_1" = "One stone in the photo";
+"cam_pt_2" = "Good lighting";
+"cam_pt_3" = "Good size";
+"cam_pt_4" = "Not too close";
+"cam_pt_5" = "Not too far away";
+"cam_pt_6" = "Not blurry";
+"cam_title_match" = "Got a match!";
+"cam_subtitle_match" = "Click on the stone's card to read more about it";
+"cam_match" = "match";
+"cam_other_match" = "Other matches";
+"cam_lable_mathc" = "Not naw";
+"cam_alert_title" = "Rate the App";
+"cam_alert_subtitle" = "Please rate our app";
+"cam_nomatch_title" = "Your stone is not found";
+"cam_nomatch_subtitle" = "Unfortunately, we were unable to recognize your stone. Please make sure you have followed all the recommendations and try again.";
+"cam_nomatch_btn_retake" = "Retake photo";
+
+//cart
+"cart_see_all" = "See all";
+"cart_description" = "Description";
+"cart_healing" = "Healing risks";
+"cart_formula" = "Formula";
+"cart_hardness" = "Hardness";
+"cart_colors" = "Colors";
+"cart_tag_rare" = "Rare stone";
+"cart_tag_healing" = "Healing stone";
+"cart_title_article" = "Article about stone";
+
+//Premium
+"pr_week" = "per week";
+"pr_best_price" = "BEST PRICE";
+"pr_subtitle" = "Only $0,99 first week, then $8,99 per week";
+"pr_btn" = "Get offer";
+
+//history
+"history_button" = "History";
+"history_wishlist_button" = "Wish List";
+"history_open_catalog" = "Open catalog";
+"history_title" = "Your history is empty";
+"history_subtitle" = "Take advantage of the recognition feature to add to your history";
+"wishlist_title" = "Your wish list is empty";
+"wishlist_subtitle" = "To add a stone to the wish list click on the heart icon in the stone card";
+"settings_invite" = "Invite friends";
+"settings_title" = "Settings";
+"settings_rate" = "Rate us";
+"settings_support" = "Support";
+
+//helper
+"helper_mess" = "Hi, welcome to The Stone Recognizer. I'm your cheerful sidekick - the gnome Doc 👋 You can always contact me with a question related to stones, crystals and minerals. I am a real expert in this business. You can find out more about how I can be helpful in the tips💡 What would you like to know about?";
+"helper_question1" = "Tell me interesting facts about rocks. What stones can be found in my country?";
+"helper_question2" = "Which stones are the most expensive in the world?";
+"helper_question3" = "What are the most popular stones to buy?";
+"helper_playceholder" = "Message";
+"helper_subtitle" = "You have 3 free message left.";
+"helper_button_premium" = "Get Premium";
+
+
+
+
+
