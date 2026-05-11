@@ -27,8 +27,10 @@ class ViewController: UIViewController {
         Task {
             await qux()
             let coins = await network.getCoins()
-            coins.forEach { print($0.name) }
+            print(coins.count)
         }
+
+        TaskRunner.run(tasks: 4)
 
     }
 
@@ -99,5 +101,22 @@ final class Network {
 struct Coin: Decodable {
     let id: String
     let name: String
+}
+
+class TaskRunner {
+    static func run(tasks: Int) {
+        for i in 0..<tasks {
+            spawnTaskAndSleep(for: 10)
+            print("Spawner task \(i)")
+        }
+    }
+
+    static func spawnTaskAndSleep(for seconds: Int) {
+        Task {
+            let tasID = UUID()
+            print(tasID)
+            sleep(UInt32(seconds))
+        }
+    }
 }
 
