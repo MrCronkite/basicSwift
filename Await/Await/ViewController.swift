@@ -19,19 +19,25 @@ struct BarResult {
 
 class ViewController: UIViewController {
 
-    private let network = Network()
+    private let network = Networking()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         Task {
             await qux()
-            let coins = await network.getCoins()
-            print(coins.count)
         }
 
-        TaskRunner.run(tasks: 4)
-
+        network.getCoinsData { result in
+            switch result {
+            case .success(let coins):
+                coins.forEach {
+                    print($0.name)
+                }
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }
     }
 
     func getAsyncValue() async -> String {
@@ -67,56 +73,5 @@ class ViewController: UIViewController {
 
 }
 
-final class Network {
 
-    private enum API {
-        static let url = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd"
-    }
-
-    private let urlSession: URLSession
-    private let jsonDecoder: JSONDecoder
-
-    init(
-        urlSession: URLSession = .shared,
-        jsonDecoder: JSONDecoder = JSONDecoder()
-    ) {
-        self.urlSession = urlSession
-        self.jsonDecoder = jsonDecoder
-    }
-
-    func getCoins() async -> [Coin] {
-        return await withCheckedContinuation { continuation in
-            urlSession.dataTask(
-                with: URLRequest(url: URL(string: API.url)!)
-            ) { [weak self] data, response, error in
-                guard let data, let self else { return }
-
-                let result: [Coin] = try! self.jsonDecoder.decode([Coin].self, from: data)
-                continuation.resume(returning: result)
-            }.resume()
-        }
-    }
-}
-
-struct Coin: Decodable {
-    let id: String
-    let name: String
-}
-
-class TaskRunner {
-    static func run(tasks: Int) {
-        for i in 0..<tasks {
-            spawnTaskAndSleep(for: 10)
-            print("Spawner task \(i)")
-        }
-    }
-
-    static func spawnTaskAndSleep(for seconds: Int) {
-        Task {
-            let tasID = UUID()
-            print(tasID)
-            sleep(UInt32(seconds))
-        }
-    }
-}
 
