@@ -28,13 +28,13 @@ class ViewController: UIViewController {
             await qux()
         }
 
-        network.getCoinsData { result in
-            switch result {
-            case .success(let coins):
-                coins.forEach {
+        Task {
+            do {
+                let coins = try await network.getCoinsData()
+                coins.forEach { 
                     print($0.name)
                 }
-            case .failure(let error):
+            } catch {
                 print(error.localizedDescription)
             }
         }

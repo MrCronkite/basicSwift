@@ -44,53 +44,26 @@ final class Networking {
     }
 
 
-    func getCoinsData(completion: @escaping (Result<[Coin], Error>) -> Void) {
+    func getCoinsData() async throws -> [Coin] {
 
         guard let url = URL(string: API.url)
         else {
-            DispatchQueue.main.async {
-                completion(.failure(APIError.invalidUrl))
-            }
-            return
+            throw APIError.invalidUrl
         }
 
-        urlSession.dataTask(
-            with: url
-        ) { [weak self] data, response, error in
-            if error != nil {
-                DispatchQueue.main.async {
-                    completion(.failure(APIError.unowned))
-                }
-                return
-            }
+        let (data, response) = try await urlSession.data(from: url)
 
-            guard let HTTPURLResponse = response as? HTTPURLResponse,
-                  200...299 ~= HTTPURLResponse.statusCode
-            else {
-                DispatchQueue.main.async {
-                    completion(.failure(APIError.responseFailure))
-                }
-                return
-            }
+        guard let httpResponse = response as? HTTPURLResponse,
+              200...299 ~= httpResponse.statusCode
+        else {
+            throw APIError.responseFailure
+        }
 
-            guard let data, let self 
-            else {
-                DispatchQueue.main.async {
-                    completion(.failure(APIError.unowned))
-                }
-                return
-            }
-
-            do {
-                let coins = try jsonDecoder.decode([Coin].self, from: data)
-                completion(.success(coins))
-            } catch {
-                DispatchQueue.main.async {
-                    completion(.failure(APIError.unowned))
-                }
-                return
-            }
-        }.resume()
+        do {
+            return try jsonDecoder.decode([Coin].self, from: data)
+        } catch {
+            throw APIError.encorectDecoding
+        }
 
     }
 
