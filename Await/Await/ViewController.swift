@@ -19,25 +19,27 @@ struct BarResult {
 
 class ViewController: UIViewController {
 
-    private let network = Networking()
+    private let vm = GalleryViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        Task {
-            await qux()
-        }
+        vm.getCoins()
 
-        Task {
-            do {
-                let coins = try await network.getCoinsData()
-                coins.forEach { 
-                    print($0.name)
-                }
-            } catch {
-                print(error.localizedDescription)
-            }
-        }
+//        Task {
+//            await qux()
+//        }
+//
+//        Task {
+//            do {
+//                let coins = try await network.getCoinsData()
+//                coins.forEach { 
+//                    print($0.name)
+//                }
+//            } catch {
+//                print(error.localizedDescription)
+//            }
+//        }
     }
 
     func getAsyncValue() async -> String {

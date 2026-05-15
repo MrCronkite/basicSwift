@@ -11,6 +11,7 @@ import Foundation
 struct Coin: Decodable {
     let id: String
     let name: String
+    let image: String
 }
 
 public enum APIError: Error {
