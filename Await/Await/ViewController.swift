@@ -20,11 +20,24 @@ struct BarResult {
 class ViewController: UIViewController {
 
     private let vm = GalleryViewModel()
+    private let ls = LocalStorage()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        vm.getCoins()
+       // vm.getCoins()
+
+        Task {
+            do {
+                 let userIds = [1, 2, 2, 3] // userId=2 дублируется — кэш должен слить запросы
+                 let results = try await ls.loadDashboard(userIds: userIds)
+                 results.forEach { print($0) }
+             } catch FetchError.timeout {
+                 print("❌ Timeout!")
+             } catch {
+                 print("❌ Error: \(error)")
+             }
+        }
 
 //        Task {
 //            await qux()
